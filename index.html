@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>INDSÆT TITEL</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section id="spillet" class="page">
+    <article id="slagter-ole-container">
+    </article>
+    <article id="spilContainer">
+      <section id="madvare">
+        <img src="img/madvare/Agurk.png" draggable="true" ondragstart="drag(event)" id="drag">
+      </section>
+      <section class="madkasser">
+        <img src="img/madkasse-70er.png" alt="70'er madkasse" ondrop="dropHalvfjerdser(event)" ondragover="allowDrop(event)">
+        <img src="img/madkasse-den-sunde.png" alt="sund madkasse" ondrop="dropSund(event)" ondragover="allowDrop(event)">
+        <img src="img/madkasse-vegansk.png" alt="usund madkasse" ondrop="dropUsund(event)" ondragover="allowDrop(event)">
+      </section>
+    </article>
+  </section>
+
+
+  <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

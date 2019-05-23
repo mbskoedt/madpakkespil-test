@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+#spillet {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/slagter-baggrund.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  position: relative;
+}
+
+#spilContainer {
+  width: 65vw;
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/klinke-baggrund.png");
+  background-repeat: no-repeat;
+  background-size: 65vw 100vh;
+}
+
+#klinker {
+  width: 100%;
+  height: 100%;
+}
+
+.madkasser {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+}
+
+.madkasser img {
+  width: 17%;
+  height: 17%;
+  margin: 50px;
+}
+
+#madvare {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  top: 25vh;
+}
+
+#madvare img {
+  width: 30%;
+  height: 30%;
+}
+
+.display-none {
+  display: none;
+}
