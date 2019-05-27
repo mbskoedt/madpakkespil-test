@@ -16,8 +16,8 @@
   <section id="home" class="page">
     <div class="indhold">
       <div class="translate">
-        <a class="britisk" href=""><img src="img/britisk.png" alt="danskflag"></a>
-        <a class="dansk" href=""><img src="img/dansk.png" alt="danskflag"></a>
+        <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img class="slagterforside" src="img/renslagter2.png" alt="slagter">
       <div class="gradient"></div>
@@ -28,11 +28,11 @@
     </div>
   </section>
 
-<!-- Ole fortæller -->
+  <!-- Ole fortæller -->
   <section id="intro-side" class="page">
     <div class="translate">
-      <a class="britisk" href=""><img src="img/britisk.png" alt="Engelsk"></a>
-      <a class="dansk" href=""><img src="img/dansk.png" alt="Dansk"></a>
+      <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="Engelsk"></a>
+      <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
     </div>
     <div class="intro-box intro-sb typewriter">
       <p>Hej!</p>
@@ -56,16 +56,16 @@
       <section id="madvare">
         <img src="img/madvare/Agurk.png" draggable="true" ondragstart="drag(event)" id="drag">
       </section>
-        <section class="madkasser-spillet">
-          <img src="img/madkasse-70er.png" alt="70'er madkasse" ondrop="dropHalvfjerdser(event)" ondragover="allowDrop(event)">
-          <img src="img/madkasse-sund.png" alt="sund madkasse" ondrop="dropSund(event)" ondragover="allowDrop(event)">
-          <img src="img/madkasse-usund.png" alt="usund madkasse" ondrop="dropUsund(event)" ondragover="allowDrop(event)">
-        </section>
+      <section class="madkasser-spillet">
+        <img src="img/madkasse-70er.png" alt="70'er madkasse" ondrop="dropHalvfjerdser(event)" ondragover="allowDrop(event)">
+        <img src="img/madkasse-sund.png" alt="sund madkasse" ondrop="dropSund(event)" ondragover="allowDrop(event)">
+        <img src="img/madkasse-usund.png" alt="usund madkasse" ondrop="dropUsund(event)" ondragover="allowDrop(event)">
+      </section>
     </article>
     <article id="slagter-ole-container">
       <div class="translate">
-        <a class="britisk" href=""><img src="img/britisk.png" alt="danskflag"></a>
-        <a class="dansk" href=""><img src="img/dansk.png" alt="danskflag"></a>
+        <a class="britisk" href=""><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" href=""><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
       <div class="box sb">
@@ -97,6 +97,99 @@
       <div class="box sb">
         <p id="feedback"> </p>
         <a onclick="showPage('halvfjerser')" class="slutspil">Spil Igen </a>
+      </div>
+    </article>
+  </section>
+
+  <!-- ENGELSK VERSION -->
+
+  <!-- ENGELSK FORSIDE -->
+  <section id="home-eng" class="page">
+    <div class="indhold">
+      <div class="translate">
+        <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="English"></a>
+        <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Danish"></a>
+      </div>
+      <img class="slagterforside" src="img/renslagter2.png" alt="slagter">
+      <div class="gradient"></div>
+      <div class="blackboard">
+        <h1 class="overskrift1">The Butchers <br> Lunch Game</h1>
+        <a class="knapforside" onclick="showPage('intro-eng')">PRESS TO START</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGELSK INTRO -->
+
+  <section id="intro-eng" class="page">
+    <div class="intro-translate">
+      <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="English"></a>
+      <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Danish"></a>
+    </div>
+    <div class="typewriter intro-box intro-sb">
+      <p>Hi!</p>
+      <p>My name is Ole the Butcher.</p>
+      <p>Welcome to my butcher shop.</p>
+      <p>So you're shopping for lunch?</p>
+      <p>Then you're in the right place.</p>
+      <p class="kort-afstand">In my shop I have groceries for a <span class="blue">70's lunch</span>,</p>
+      <p><span class="yellow">a healthy lunch</span> and <span class="red">an unhealthy lunch</span>.</p>
+      <p>Can you place the food in the fitting lunch?</p>
+      <div class="introknap-animation">
+        <a class="introknap" onclick="showPage('spillet-eng')">PRESS TO START</a>
+      </div>
+    </div>
+    <img src="img/renslagter2.png" alt="Slagter Ole" class="intro-slagter">
+  </section>
+
+  <!-- THE GAME -->
+
+  <section id="spillet-eng" class="page">
+    <article class="resultat">
+      <section id="madvare">
+        <img src="img/madvare/Agurk.png" draggable="true" ondragstart="drag(event)" id="drag">
+      </section>
+      <section class="madkasser-spillet">
+        <img src="img/madkasse-70er.png" alt="70's lunch" ondrop="dropHalvfjerdser(event)" ondragover="allowDrop(event)">
+        <img src="img/madkasse-sund.png" alt="Healthy lunch" ondrop="dropSund(event)" ondragover="allowDrop(event)">
+        <img src="img/madkasse-usund.png" alt="Unhealthy lunch" ondrop="dropUsund(event)" ondragover="allowDrop(event)">
+      </section>
+    </article>
+    <article id="slagter-ole-container">
+      <div class="translate">
+        <a class="britisk" href=""><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" href=""><img src="img/dansk.png" alt="Dansk"></a>
+      </div>
+      <img src="img/renslagter2.png" class="slagterole">
+      <div class="box sb">
+        <p id="feedback"> </p>
+        <a onclick="showPage('')" class="slutspil">PLAY AGAIN</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- RESULTS -->
+
+  <section id="resultat-eng" class="page">
+    <article class="resultat">
+      <div class="madkasser">
+        <a href=""><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
+        <a href=""><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
+        <a href=""> <img src="img/madkasse-vegansk.png" alt="madkasseikon"></a>
+      </div>
+      <img src="img/veagt.png" class="vaegt" alt="vægt">
+      <img src="img/brunnaal.png" alt="nål" class="naal">
+      <p id="score">mit resultat</p>
+    </article>
+    <article id="slagter-ole-container">
+      <div class="translate">
+        <a class="britisk" href=""><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" href=""><img src="img/dansk.png" alt="Dansk"></a>
+      </div>
+      <img src="img/renslagter2.png" class="slagterole">
+      <div class="box sb">
+        <p id="feedback"></p>
+        <a onclick="showPage('')" class="slutspil">PLAY AGAIN</a>
       </div>
     </article>
   </section>
