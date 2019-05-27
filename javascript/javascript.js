@@ -19,7 +19,7 @@ function showPage(pageId) {
 
 // set default page
 function setDefaultPage() {
-  let page = "home";
+  let page = "spillet";
   if (location.hash) {
     page = location.hash.slice(1);
   }
@@ -181,23 +181,8 @@ let usundMadkasseCompare = [{
     "imgurl": "https://i.imgur.com/ghKnKtD.png"
   }
 ];
-console.log(halvfjerdserMadkasseCompare);
 
 // fetch
-
-fetch('json/madvarer.json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(json) {
-    console.log(json);
-    appendMadvarer(json.madvarer);
-    /*
-    appendHalvfjerdserMadkasseCompare(json.halvfjerdserMadkasseCompare);
-    appendSundMadkasseCompare(json.sundMadkasseCompare);
-    appendUsundMadkasseCompare(json.usundMadkasseCompare);
-    */
-  });
 
 fetch('json/madvarer.json')
   .then(function(response) {
@@ -244,11 +229,16 @@ function appendUsundMadkasseCompare(usundMadkasseCompare) {
 // viser ny madvare ved hver drop
 
 function showMadvare() {
-  console.log(i);
-  document.getElementById('madvare').innerHTML += `
+  for (i = 0; i < madvarerArray.length; i++) {
+    document.getElementById('madvare').innerHTML += `
   <img src="${madvarerArray[i].imgurl}" draggable="true" ondragstart="drag(event)" alt="${madvarerArray[i].name}" id="${madvarerArray[i].name}">
   `;
-  i++;
+    if (i + 1 == madvarerArray.length) {
+      document.getElementById('resultatTale').innerHTML += '<p>Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>'
+    } else(i + 1 > madvarerArray.length) {
+      break;
+    };
+  };
 };
 
 // drag and drop
@@ -323,5 +313,3 @@ function tale() {
     feedback.innerHTML = aladin + '<p> /10 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
   }
 }
-
-tale();

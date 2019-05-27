@@ -629,6 +629,11 @@ p {
   top: 2vh;
 }
 
+#resultatTale {
+  position: relative;
+  top: 2vh;
+}
+
 @-webkit-keyframes bounce-in-top {
   0% {
     -webkit-transform: translateY(-500px);
