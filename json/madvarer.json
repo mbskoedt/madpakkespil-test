@@ -145,6 +145,8 @@
             "imgurl": "https://i.imgur.com/3iGLhc9.png",
              "besked": "Vidste du godt at et af de helt store plusser er æggets proteiner, som er af højeste kvalitet?"
     }
+<<<<<<< HEAD
+=======
   ],
     "halvfjerdserMadkasseCompare": [{
             "name": "Agurk",
@@ -283,5 +285,6 @@
             "madpakke": ["1970", "Den usunde"],
             "imgurl": "https://i.imgur.com/ghKnKtD.png"
     }
+>>>>>>> d66a798387c31b3148a3613a5778d1a7f0d2a8f0
   ]
 }

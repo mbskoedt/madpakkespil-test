@@ -19,11 +19,19 @@ function showPage(pageId) {
 
 // set default page
 function setDefaultPage() {
+<<<<<<< HEAD
+  let page = "spillet";
+  if (location.hash) {
+    page = location.hash.slice(1);
+  }
+  showPage(page);
+=======
     let page = "home";
     if (location.hash) {
         page = location.hash.slice(1);
     }
     showPage(page);
+>>>>>>> d66a798387c31b3148a3613a5778d1a7f0d2a8f0
 }
 
 setDefaultPage();
@@ -202,7 +210,6 @@ let usundMadkasseCompare = [{
         "imgurl": "https://i.imgur.com/ghKnKtD.png"
   }
 ];
-console.log(halvfjerdserMadkasseCompare);
 
 // fetch
 
@@ -220,6 +227,8 @@ fetch('json/madvarer.json')
         */
     });
 
+<<<<<<< HEAD
+=======
 fetch('json/madvarer.json')
     .then(function (response) {
         return response.json();
@@ -234,6 +243,7 @@ fetch('json/madvarer.json')
         */
     });
 
+>>>>>>> d66a798387c31b3148a3613a5778d1a7f0d2a8f0
 // skubber fetchet data ind i nyt array
 
 function appendMadvarer(madvarer) {
@@ -265,11 +275,24 @@ function appendUsundMadkasseCompare(usundMadkasseCompare) {
 // viser ny madvare ved hver drop
 
 function showMadvare() {
+<<<<<<< HEAD
+  for (i = 0; i < madvarerArray.length; i++) {
+    document.getElementById('madvare').innerHTML += `
+  <img src="${madvarerArray[i].imgurl}" draggable="true" ondragstart="drag(event)" alt="${madvarerArray[i].name}" id="${madvarerArray[i].name}">
+  `;
+    if (i + 1 == madvarerArray.length) {
+      document.getElementById('resultatTale').innerHTML += '<p>Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>'
+    } else(i + 1 > madvarerArray.length) {
+      break;
+    };
+  };
+=======
     console.log(i);
     document.getElementById('madvare').innerHTML += `
   <img src="${madvarerArray[i].imgurl}" draggable="true" ondragstart="drag(event)" alt="${madvarerArray[i].name}" id="${madvarerArray[i].name}">
   `;
     i++;
+>>>>>>> d66a798387c31b3148a3613a5778d1a7f0d2a8f0
 };
 
 // drag and drop
@@ -344,5 +367,3 @@ function tale() {
         feedback.innerHTML = aladin + '<p> /10 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
     }
 }
-
-tale();

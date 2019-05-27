@@ -5,10 +5,12 @@ body {
 #home {
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/slagterbaggrund.png);
+  background-image: url(/img/slagterbaggrund.png);
   background-size: cover;
 }
 
+p {
+  display: inline;
 #home-eng {
   width: 100vw;
   height: 100vh;
@@ -21,6 +23,7 @@ p {
   display: inline;
 }*/
 /* Ole fortæller */
+
 #intro-side {
   position: relative;
   background-image: url(../img/slagterbaggrund.png);
@@ -46,6 +49,7 @@ p {
   right: 9%;
 }
 
+.translate {
 .intro-translate {
   width: 200px;
   height: 75px;
@@ -56,6 +60,7 @@ p {
   box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
 }
 
+.translate img {
 .intro-translate img {
   width: 75px;
 }
@@ -75,7 +80,6 @@ p {
 .intro-box {
   top: 150px;
   left: 90px;
-  width: 1000px;
   border-radius: 15px;
   background: #ffffff;
   font-family: 'Ubuntu', sans-serif;
@@ -636,6 +640,11 @@ p {
 }
 
 #feedback {
+  position: relative;
+  top: 2vh;
+}
+
+#resultatTale {
   position: relative;
   top: 2vh;
 }
