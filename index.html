@@ -14,8 +14,8 @@
   <section id="home" class="page">
     <div class="indhold">
       <div class="translate">
-        <a class="britisk" href=""><img src="img/britisk.png" alt="Engelsk"></a>
-        <a class="dansk" href=""><img src="img/dansk.png" alt="Dansk"></a>
+        <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img class="slagterforside" src="img/renslagter2.png" alt="slagter">
       <div class="gradient"></div>
@@ -30,8 +30,8 @@
 
   <section id="intro-side" class="page">
     <div class="intro-translate">
-      <a class="britisk" href=""><img src="img/britisk.png" alt="Engelsk"></a>
-      <a class="dansk" href=""><img src="img/dansk.png" alt="Dansk"></a>
+      <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="Engelsk"></a>
+      <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
     </div>
     <div class="typewriter intro-box intro-sb">
       <p>Hej!</p>
@@ -107,8 +107,8 @@
   <section id="home-eng" class="page">
     <div class="indhold">
       <div class="translate">
-        <a class="britisk" href=""><img src="img/britisk.png" alt="danskflag"></a>
-        <a class="dansk" href=""><img src="img/dansk.png" alt="danskflag"></a>
+        <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="English"></a>
+        <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Danish"></a>
       </div>
       <img class="slagterforside" src="img/renslagter2.png" alt="slagter">
       <div class="gradient"></div>
@@ -121,12 +121,12 @@
 
   <!-- ENGELSK INTRO -->
 
-  <section id="intro-side intro-eng">
-    <div class="translate">
-      <a class="britisk" href=""><img src="img/britisk.png" alt="English"></a>
-      <a class="dansk" href=""><img src="img/dansk.png" alt="Danish"></a>
+  <section id="intro-eng" class="page">
+    <div class="intro-translate">
+      <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="English"></a>
+      <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Danish"></a>
     </div>
-    <div class="intro-box intro-sb typewriter">
+    <div class="typewriter intro-box intro-sb">
       <p>Hi!</p>
       <p>My name is Ole the Butcher.</p>
       <p>Welcome to my butcher shop.</p>
@@ -139,7 +139,7 @@
         <a class="introknap" onclick="showPage('spillet-eng')">PRESS TO START</a>
       </div>
     </div>
-    <img src="img/slagterole.png" alt="Slagter Ole" class="intro-slagter">
+    <img src="img/renslagter2.png" alt="Slagter Ole" class="intro-slagter">
   </section>
 
   <!-- THE GAME -->
