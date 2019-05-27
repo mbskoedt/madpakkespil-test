@@ -33,9 +33,150 @@ setDefaultPage();
 let madvarerArray = [];
 let i = 0;
 
-let halvfjerdserMadkasseArray = [];
-let sundMadkasseArray = [];
-let usundMadkasseArray = [];
+let halvfjerdserMadkasseArray = [{
+    "name": "Agurk",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/W07QaXJ.png"
+  },
+  {
+    "name": "Gulerod",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/ET7cLkH.png"
+  },
+  {
+    "name": "Hamburgerryg",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/SX3ZaGC.png"
+  },
+  {
+    "name": "Leverpostej",
+    "madpakke": ["1970"],
+    "imgurl": "https://i.imgur.com/eoWEt7G.png"
+  },
+  {
+    "name": "Rugbrød",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/hmFjpPR.png"
+  },
+  {
+    "name": "Rullepølse",
+    "madpakke": ["1970"],
+    "imgurl": "https://i.imgur.com/t5x6WpK.png"
+  },
+  {
+    "name": "Spegepølse",
+    "madpakke": ["1970"],
+    "imgurl": "https://i.imgur.com/Uu7q4uZ.png"
+  },
+  {
+    "name": "Røde pølser",
+    "madpakke": ["1970", "Den usunde"],
+    "imgurl": "https://i.imgur.com/J3VyVFX.png"
+  },
+  {
+    "name": "Kartoffel",
+    "madpakke": ["1970", "Den usunde"],
+    "imgurl": "https://i.imgur.com/ghKnKtD.png"
+  },
+  {
+    "name": "Æg",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/3iGLhc9.png"
+  }
+];
+
+let sundMadkasseArray = [{
+    "name": "Agurk",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/W07QaXJ.png"
+  },
+  {
+    "name": "Banan",
+    "madpakke": ["Den sunde"],
+    "imgurl": "https://i.imgur.com/YODd2B1.png"
+  },
+  {
+    "name": "Falafel",
+    "madpakke": ["Den sunde"],
+    "imgurl": "https://i.imgur.com/n3NdIWq.png"
+  },
+  {
+    "name": "Gulerod",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/ET7cLkH.png"
+  },
+  {
+    "name": "Hamburgerryg",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/SX3ZaGC.png"
+  },
+  {
+    "name": "Peberfrugt",
+    "madpakke": ["Den sunde"],
+    "imgurl": "https://i.imgur.com/vuw5KZP.png"
+  },
+  {
+    "name": "Pære",
+    "madpakke": ["Den sunde"],
+    "imgurl": "https://i.imgur.com/6BNv8MF.png"
+  },
+  {
+    "name": "Rugbrød",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/hmFjpPR.png"
+  },
+  {
+    "name": "Æble",
+    "madpakke": ["Den sunde"],
+    "imgurl": "https://i.imgur.com/A4JQSKi.png"
+  },
+  {
+    "name": "Æg",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/3iGLhc9.png"
+  }
+];
+
+let usundMadkasseArray = [{
+    "name": "Yoghurt",
+    "madpakke": ["Den usunde"],
+    "imgurl": "https://i.imgur.com/rRYA9rC.png"
+  },
+  {
+    "name": "Ostehaps",
+    "madpakke": ["Den usunde"],
+    "imgurl": "https://i.imgur.com/8zKZkvl.png"
+  },
+  {
+    "name": "Mælkesnitte",
+    "madpakke": ["Den usunde"],
+    "imgurl": "https://i.imgur.com/Zzmt4g3.png"
+  },
+  {
+    "name": "Cheez Dippers",
+    "madpakke": ["Den usunde"],
+    "imgurl": "https://i.imgur.com/icswEPy.png"
+  },
+  {
+    "name": "Toast brød",
+    "madpakke": ["Den usunde"],
+    "imgurl": "https://i.imgur.com/ojTElwE.png"
+  },
+  {
+    "name": "Røde pølser",
+    "madpakke": ["1970", "Den usunde"],
+    "imgurl": "https://i.imgur.com/J3VyVFX.png"
+  },
+  {
+    "name": "Kartoffel",
+    "madpakke": ["1970", "Den usunde"],
+    "imgurl": "https://i.imgur.com/ghKnKtD.png"
+  }
+];
+
+console.log(halvfjerdserMadkasseArray);
+console.log(sundMadkasseArray);
+console.log(usundMadkasseArray);
 
 // sammenlignings arrays
 
@@ -52,9 +193,25 @@ fetch('json/madvarer.json')
   .then(function(json) {
     console.log(json);
     appendMadvarer(json.madvarer);
+    /*
     appendHalvfjerdserMadkasseCompare(json.halvfjerdserMadkasseCompare);
     appendSundMadkasseCompare(json.sundMadkasseCompare);
     appendUsundMadkasseCompare(json.usundMadkasseCompare);
+    */
+  });
+
+fetch('json/madvarer.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
+    appendMadvarer(json.madvarer);
+    /*
+    appendHalvfjerdserMadkasseCompare(json.halvfjerdserMadkasseCompare);
+    appendSundMadkasseCompare(json.sundMadkasseCompare);
+    appendUsundMadkasseCompare(json.usundMadkasseCompare);
+    */
   });
 
 // skubber fetchet data ind i nyt array
@@ -65,11 +222,11 @@ function appendMadvarer(madvarer) {
   };
 };
 
+/*
 function appendHalvfjerdserMadkasseCompare(halvfjerdserMadkasseCompare) {
   for (let madvareHalvfjerdserMadkasse of halvfjerdserMadkasseCompare) {
     halvfjerdserMadkasseCompare.push(madvareHalvfjerdserMadkasse);
   };
-  console.log(halvfjerdserMadkasseCompare);
 };
 
 function appendSundMadkasseCompare(sundMadkasseCompare) {
@@ -83,6 +240,7 @@ function appendUsundMadkasseCompare(usundMadkasseCompare) {
     usundMadkasseCompare.push(madvareUsundMadkasseCompare);
   };
 };
+*/
 
 // viser ny madvare ved hver drop
 

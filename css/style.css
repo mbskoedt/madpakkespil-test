@@ -13,6 +13,234 @@ p {
   display: inline;
 }
 
+/* Ole fortæller */
+
+#intro-side {
+  position: relative;
+  background-image: url(../img/slagterbaggrund.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.intro-slagter {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 9%;
+}
+
+.translate {
+  width: 200px;
+  height: 75px;
+  background-image: url(../img/klinkebaggrund.png);
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
+}
+
+.translate img {
+  width: 75px;
+}
+
+.britisk {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.dansk {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.intro-box {
+  top: 150px;
+  left: 90px;
+  width: 50vw;
+  border-radius: 15px;
+  background: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  position: relative;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  z-index: 2;
+}
+
+.intro-sb:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 50px solid #ffffff;
+  border-right: 50Px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid #ffffff;
+  right: -80px;
+  top: 0px;
+}
+
+.typewriter p {
+  border-right: .05em solid;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*
+
+.typewriter p:nth-child(1) {
+  width: 60px;
+  opacity: 0;
+  animation: type 1s steps(40, end);
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(2) {
+  width: 380px;
+  opacity: 0;
+  animation: type 2.5s steps(40, end);
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(3) {
+  width: 450px;
+  opacity: 0;
+  animation: type 2.5s steps(40, end);
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(4) {
+  width: 470px;
+  opacity: 0;
+  animation: type 2.5s steps(40, end);
+  animation-delay: 7.5s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(5) {
+  width: 560px;
+  opacity: 0;
+  animation: type 2.5s steps(40, end);
+  animation-delay: 10.5s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(6) {
+  width: 850px;
+  opacity: 0;
+  animation: type 4s steps(40, end);
+  animation-delay: 13.5s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(7) {
+  width: 680px;
+  opacity: 0;
+  animation: type 4s steps(40, end);
+  animation-delay: 17.6s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(8) {
+  width: 940px;
+  opacity: 0;
+  animation: type 4.5s steps(40, end);
+  animation-delay: 22s;
+  animation-fill-mode: forwards;
+}
+*/
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  99.9% {
+    border-right: .05em solid;
+  }
+
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.kort-afstand {
+  margin-bottom: -25px;
+}
+
+.blue {
+  color: #007291;
+}
+
+.yellow {
+  color: #F5C600;
+}
+
+.red {
+  color: #9B4923;
+}
+
+.introknap {
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+  background-color: #6eba80;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  border: 4px white solid;
+  width: 20%;
+  margin-left: 40%;
+  height: 20px;
+  text-align: center;
+  box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
+  cursor: pointer;
+}
+
+/*
+.introknap-animation {
+  margin-top: 5%;
+  animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 27.5s both;
+}
+*/
+
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+
 /* Spillet */
 #spillet {
   width: 100vw;
