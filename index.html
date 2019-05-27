@@ -11,18 +11,72 @@
 </head>
 
 <body>
+  <!-- startside / pauseskærm -->
+
+  <section id="home" class="page">
+    <div class="indhold">
+      <div class="translate">
+        <a class="britisk" href=""><img src="img/britisk.png" alt="danskflag"></a>
+        <a class="dansk" href=""><img src="img/dansk.png" alt="danskflag"></a>
+      </div>
+      <img class="slagterforside" src="img/renslagter2.png" alt="slagter">
+      <div class="gradient"></div>
+      <div class="blackboard">
+        <h1 class="overskrift1">Slagterens <br> Madpakkespil</h1>
+        <a class="knapforside" onclick="showPage('spillet')">TRYK FOR START</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- spillet -->
+
   <section id="spillet" class="page">
-    <article id="slagter-ole-container">
-    </article>
-    <article id="spilContainer">
+    <article class="resultat">
       <section id="madvare">
         <img src="img/madvare/Agurk.png" draggable="true" ondragstart="drag(event)" id="drag">
       </section>
-      <section class="madkasser">
-        <img src="img/madkasse-70er.png" alt="70'er madkasse" ondrop="dropHalvfjerdser(event)" ondragover="allowDrop(event)">
-        <img src="img/madkasse-den-sunde.png" alt="sund madkasse" ondrop="dropSund(event)" ondragover="allowDrop(event)">
-        <img src="img/madkasse-vegansk.png" alt="usund madkasse" ondrop="dropUsund(event)" ondragover="allowDrop(event)">
-      </section>
+        <section class="madkasser-spillet">
+          <img src="img/madkasse-70er.png" alt="70'er madkasse" ondrop="dropHalvfjerdser(event)" ondragover="allowDrop(event)">
+          <img src="img/madkasse-sund.png" alt="sund madkasse" ondrop="dropSund(event)" ondragover="allowDrop(event)">
+          <img src="img/madkasse-usund.png" alt="usund madkasse" ondrop="dropUsund(event)" ondragover="allowDrop(event)">
+        </section>
+    </article>
+    <article id="slagter-ole-container">
+      <div class="translate">
+        <a class="britisk" href=""><img src="img/britisk.png" alt="danskflag"></a>
+        <a class="dansk" href=""><img src="img/dansk.png" alt="danskflag"></a>
+      </div>
+      <img src="img/renslagter2.png" class="slagterole">
+      <div class="box sb">
+        <p id="feedback"> </p>
+        <a onclick="showPage('halvfjerser')" class="slutspil">Spil Igen </a>
+      </div>
+    </article>
+  </section>
+
+  <!-- resultat side -->
+
+  <section id="resultat" class="page">
+    <article class="resultat">
+      <div class="madkasser">
+        <a href=""><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
+        <a href=""><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
+        <a href=""> <img src="img/madkasse-vegansk.png" alt="madkasseikon"></a>
+      </div>
+      <img src="img/veagt.png" class="vaegt" alt="vægt">
+      <img src="img/brunnaal.png" alt="nål" class="naal">
+      <p id="score">mit resultat</p>
+    </article>
+    <article id="slagter-ole-container">
+      <div class="translate">
+        <a class="britisk" href=""><img src="img/britisk.png" alt="danskflag"></a>
+        <a class="dansk" href=""><img src="img/dansk.png" alt="danskflag"></a>
+      </div>
+      <img src="img/renslagter2.png" class="slagterole">
+      <div class="box sb">
+        <p id="feedback"> </p>
+        <a onclick="showPage('halvfjerser')" class="slutspil">Spil Igen </a>
+      </div>
     </article>
   </section>
 

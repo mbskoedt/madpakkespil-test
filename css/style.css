@@ -2,6 +2,18 @@ body {
   margin: 0;
 }
 
+#home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/slagterbaggrund.png);
+  background-size: cover;
+}
+
+p {
+  display: inline;
+}
+
+/* Spillet */
 #spillet {
   width: 100vw;
   height: 100vh;
@@ -25,7 +37,7 @@ body {
   height: 100%;
 }
 
-.madkasser {
+.madkasser-spillet {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -35,7 +47,7 @@ body {
   left: 0;
 }
 
-.madkasser img {
+.madkasser-spillet img {
   width: 17%;
   height: 17%;
   margin: 50px;
@@ -56,4 +68,455 @@ body {
 
 .display-none {
   display: none;
+}
+
+/* forside */
+.indhold {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  top: 0vh;
+}
+
+.slagterforside {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 9%;
+}
+
+.gradient {
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.blackboard {
+  background-image: url(/img/blackboard.jpg);
+  width: 40vw;
+  height: 25vw;
+  position: relative;
+  top: -75vh;
+  left: 10vw;
+  box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
+}
+
+.overskrift1 {
+  font-family: 'Spicy Rice', cursive;
+  position: absolute;
+  color: white;
+  font-size: 4vw;
+  font-weight: 100;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 0;
+  top: 15%;
+  text-align: center;
+  letter-spacing: 8px;
+  text-shadow: 8px 8px rgba(0, 0, 0, 0.29);
+}
+
+.knapforside {
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 2vw;
+  background-color: #6eba80;
+  padding: 2%;
+  border: 4px white solid;
+  position: absolute;
+  width: 40%;
+  text-align: center;
+  top: 65%;
+  left: 30%;
+  box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
+  animation: heartbeat 2.5s ease-in-out 2s infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+/* resultat side */
+#resultat {
+  position: relative;
+}
+
+.resultat {
+  width: 65%;
+  height: 100vh;
+  background-image: url(/img/klinkebaggrund.png);
+  position: absolute;
+}
+
+#slagter-ole-container {
+  width: 35%;
+  height: 100vh;
+  background-image: url(/img/slagterbaggrund.png);
+  background-size: cover;
+  position: absolute;
+  right: 0;
+}
+
+.slagterole {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  margin-left: 15%;
+}
+
+.vaegt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.naal {
+  position: absolute;
+  width: 1.5%;
+  top: 47%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  animation: rotate-bottom 3s 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+@-webkit-keyframes rotate-bottom {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+}
+
+@keyframes rotate-bottom {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+}
+
+#score {
+  position: absolute;
+  top: 85%;
+  font-size: 3vw;
+  margin: 0;
+  font-family: 'Spicy Rice', cursive;
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+  display: inline;
+  letter-spacing: 8px;
+}
+
+.box {
+  top: 25vh;
+  left: -240px;
+  width: 300px;
+  border-radius: 15px;
+  background: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  position: relative;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  height: 45vh;
+}
+
+.sb:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 50px solid #ffffff;
+  border-right: 50Px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid #ffffff;
+  left: 20vw;
+}
+
+.slutspil {
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 2vw;
+  background-color: #6eba80;
+  padding: 2%;
+  border: 4px white solid;
+  position: absolute;
+  width: 40%;
+  text-align: center;
+  top: 80%;
+  left: 30%;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.39);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
+}
+
+.feedback {
+  width: 100%;
+  position: absolute:
+}
+
+/*translate*/
+.translate {
+  width: 200px;
+  height: 75px;
+  background-image: url(/img/klinkebaggrund.png);
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
+}
+
+.translate img {
+  width: 75px;
+}
+
+.britisk {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.dansk {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.madkasser {
+  position: absolute;
+  left: 11.5vw;
+  top: 7vh;
+  z-index: 11111;
+  animation: bounce-in-top 2.1s both;
+}
+
+.madkasser img {
+  width: 200px;
+  margin-left: 10px;
+}
+
+#feedback {
+  position: relative;
+  top: 2vh;
+}
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 }
