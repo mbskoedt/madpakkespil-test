@@ -33,7 +33,15 @@ setDefaultPage();
 let madvarerArray = [];
 let i = 0;
 
-let halvfjerdserMadkasseArray = [{
+// sammenlignings array
+
+let halvfjerdserMadkasseArray = [];
+let sundMadkasseArray = [];
+let usundMadkasseArray = [];
+
+// sammenlignings arrays
+
+let halvfjerdserMadkasseCompare = [{
     "name": "Agurk",
     "madpakke": ["1970", "Den sunde"],
     "imgurl": "https://i.imgur.com/W07QaXJ.png"
@@ -85,7 +93,7 @@ let halvfjerdserMadkasseArray = [{
   }
 ];
 
-let sundMadkasseArray = [{
+let sundMadkasseCompare = [{
     "name": "Agurk",
     "madpakke": ["1970", "Den sunde"],
     "imgurl": "https://i.imgur.com/W07QaXJ.png"
@@ -137,7 +145,7 @@ let sundMadkasseArray = [{
   }
 ];
 
-let usundMadkasseArray = [{
+let usundMadkasseCompare = [{
     "name": "Yoghurt",
     "madpakke": ["Den usunde"],
     "imgurl": "https://i.imgur.com/rRYA9rC.png"
@@ -173,16 +181,7 @@ let usundMadkasseArray = [{
     "imgurl": "https://i.imgur.com/ghKnKtD.png"
   }
 ];
-
-console.log(halvfjerdserMadkasseArray);
-console.log(sundMadkasseArray);
-console.log(usundMadkasseArray);
-
-// sammenlignings arrays
-
-let halvfjerdserMadkasseCompare = [];
-let sundMadkasseCompare = [];
-let usundMadkasseCompare = [];
+console.log(halvfjerdserMadkasseCompare);
 
 // fetch
 
