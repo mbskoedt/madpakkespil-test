@@ -33,10 +33,25 @@ setDefaultPage();
 let madvarerArray = [];
 let i = 0;
 
+
 let halvfjerdserMadkasseArray = [{
         "name": "Agurk",
         "madpakke": ["1970", "Den sunde"],
         "imgurl": "https://i.imgur.com/W07QaXJ.png"
+
+// sammenlignings array
+
+let halvfjerdserMadkasseArray = [];
+let sundMadkasseArray = [];
+let usundMadkasseArray = [];
+
+// sammenlignings arrays
+
+let halvfjerdserMadkasseCompare = [{
+    "name": "Agurk",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/W07QaXJ.png"
+
   },
     {
         "name": "Gulerod",
@@ -85,10 +100,17 @@ let halvfjerdserMadkasseArray = [{
   }
 ];
 
+
 let sundMadkasseArray = [{
         "name": "Agurk",
         "madpakke": ["1970", "Den sunde"],
         "imgurl": "https://i.imgur.com/W07QaXJ.png"
+
+let sundMadkasseCompare = [{
+    "name": "Agurk",
+    "madpakke": ["1970", "Den sunde"],
+    "imgurl": "https://i.imgur.com/W07QaXJ.png"
+
   },
     {
         "name": "Banan",
@@ -137,10 +159,17 @@ let sundMadkasseArray = [{
   }
 ];
 
+
 let usundMadkasseArray = [{
         "name": "Yoghurt",
         "madpakke": ["Den usunde"],
         "imgurl": "https://i.imgur.com/rRYA9rC.png"
+
+let usundMadkasseCompare = [{
+    "name": "Yoghurt",
+    "madpakke": ["Den usunde"],
+    "imgurl": "https://i.imgur.com/rRYA9rC.png"
+
   },
     {
         "name": "Ostehaps",
@@ -173,16 +202,7 @@ let usundMadkasseArray = [{
         "imgurl": "https://i.imgur.com/ghKnKtD.png"
   }
 ];
-
-console.log(halvfjerdserMadkasseArray);
-console.log(sundMadkasseArray);
-console.log(usundMadkasseArray);
-
-// sammenlignings arrays
-
-let halvfjerdserMadkasseCompare = [];
-let sundMadkasseCompare = [];
-let usundMadkasseCompare = [];
+console.log(halvfjerdserMadkasseCompare);
 
 // fetch
 
