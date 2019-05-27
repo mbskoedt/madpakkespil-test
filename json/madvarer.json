@@ -1,241 +1,273 @@
 {
-  "madvarer": [{
-      "name": "Agurk",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/W07QaXJ.png"
+    "madvarer": [{
+            "name": "Agurk",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/W07QaXJ.png",
+            "besked": "Vidste du godt at Agurk har været en sundtopping og snack i danskernes madpakke i mange år?"
     },
-    {
-      "name": "Banan",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/YODd2B1.png"
+        {
+            "name": "Banan",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/YODd2B1.png",
+            "besked": "Vidste du godt at Bananer indeholder høje niveauer af B-vitaminer samt kalium og magnesium?"
+
     },
-    {
-      "name": "Falafel",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/n3NdIWq.png"
+        {
+            "name": "Falafel",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/n3NdIWq.png",
+            "besked": "Vidste du godt at Falafel er lavet på kikærter som har et højt protein indhold?"
+           
     },
-    {
-      "name": "Gulerod",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/ET7cLkH.png"
+        {
+            "name": "Gulerod",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/ET7cLkH.png",
+            "besked": "Vidste du godt at Gulerod er rig på A vitamin og har været en del af danskernes madpakke i mange år?"
     },
-    {
-      "name": "Hamburgerryg",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/SX3ZaGC.png"
+        {
+            "name": "Hamburgerryg",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/SX3ZaGC.png",
+            "besked": "Vidste du godt at Hamburgerryg har fungeret som kødpålæg på danskernes madpakke i mange år?"
     },
-    {
-      "name": "Leverpostej",
-      "madpakke": ["1970"],
-      "imgurl": "https://i.imgur.com/eoWEt7G.png"
+        {
+            "name": "Leverpostej",
+            "madpakke": ["1970"],
+            "imgurl": "https://i.imgur.com/eoWEt7G.png",
+            "besked": " Vidste du godt at Leverpostej er lavet af leveren fra en gris? Leveren bliver hakket sammen med spæk, løg, og bliver blandet med mælk, æg, salt og peber. Herefter bliver den bagt i ovnen."
     },
-    {
-      "name": "Peberfrugt",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/vuw5KZP.png"
+        {
+            "name": "Peberfrugt",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/vuw5KZP.png",
+            "besked": " Vidste du godt at Peberfrugt er fuld af vitaminer og mineraler?"
+           
+
     },
-    {
-      "name": "Pære",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/6BNv8MF.png"
+        {
+            "name": "Pære",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/6BNv8MF.png",
+             "besked": " Vidste du godt at Pærer indeholder blandt andet vitaminerne A-, B og C og mineralet kalium?"
+            
     },
-    {
-      "name": "Rugbrød",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/hmFjpPR.png"
+        {
+            "name": "Rugbrød",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/hmFjpPR.png",
+            "besked": " Vidste du godt at Rugbrød er lavet på rugmel og fyldt med sunde kerner? Rugbrød er blevet brugt i madpakker, lige så længe jeg kan huske."
     },
-    {
-      "name": "Rullepølse",
-      "madpakke": ["1970"],
-      "imgurl": "https://i.imgur.com/t5x6WpK.png"
+        {
+            "name": "Rullepølse",
+            "madpakke": ["1970"],
+            "imgurl": "https://i.imgur.com/t5x6WpK.png",
+            "besked": " Vidste du godt at Rullepølse er lavet af svineslag, salt og peber? Man har spist rullepølse i Danmark siden 1700-tallet. "
     },
-    {
-      "name": "Spegepølse",
-      "madpakke": ["1970"],
-      "imgurl": "https://i.imgur.com/Uu7q4uZ.png"
+        {
+            "name": "Spegepølse",
+            "madpakke": ["1970"],
+            "imgurl": "https://i.imgur.com/Uu7q4uZ.png",
+            "besked": " Vidste du godt at Spegepølse ofte er fremstillet af hakket svinekød, spæk og krydderier? Kødet er let saltet?. "
+            
+            
     },
-    {
-      "name": "Æble",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/A4JQSKi.png"
+        {
+            "name": "Æble",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/A4JQSKi.png",
+            "besked": " Vidste du godt at Æble i dag er en normal del af mange danskeres hverdag, men at det har det ikke altid været? "
     },
-    {
-      "name": "Yoghurt",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/rRYA9rC.png"
+        {
+            "name": "Yoghurt",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/rRYA9rC.png",
+            "besked": " Vidste du godt at Yoghurt er rig på proteiner, B-vitaminer og mineraler? "
     },
-    {
-      "name": "Ostehaps",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/8zKZkvl.png"
+        {
+            "name": "Ostehaps",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/8zKZkvl.png",
+            "besked": " Vidste du godt at Yoghurt er rig på proteiner, B-vitaminer og mineraler? "
     },
-    {
-      "name": "Mælkesnitte",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/Zzmt4g3.png"
+        {
+            "name": "Mælkesnitte",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/Zzmt4g3.png",
+            "besked": "Vidste du godt at Ostehapsen blev oprindeligt produceret som en eksportvare beregnet til det amerikanske marked under navnet Cheesesticks, hvor det viste sig succesfuldt"
     },
-    {
-      "name": "Cheez Dippers",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/icswEPy.png"
+        {
+            "name": "Cheez Dippers",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/icswEPy.png",
+             "besked": "Vidste du godt at Cheez dippers er en særdeles populær snack i madpakken blandt børn?"
     },
-    {
-      "name": "Toast brød",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/ojTElwE.png"
+        {
+            "name": "Toast brød",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/ojTElwE.png",
+            "besked": "Vidste du godt at Toast brød er hvidt brød, og indeholder mindre næring end f.eks. rugbrød?"
+            
+            
     },
-    {
-      "name": "Røde pølser",
-      "madpakke": ["1970", "Den usunde"],
-      "imgurl": "https://i.imgur.com/J3VyVFX.png"
+        {
+            "name": "Røde pølser",
+            "madpakke": ["1970", "Den usunde"],
+            "imgurl": "https://i.imgur.com/J3VyVFX.png",
+             "besked": "Vidste du godt at Røde pølser er lavet på svinefars, og engang fik sin røde farve fra små lus?"
+            
     },
-    {
-      "name": "Kartoffel",
-      "madpakke": ["1970", "Den usunde"],
-      "imgurl": "https://i.imgur.com/ghKnKtD.png"
+        {
+            "name": "Kartoffel",
+            "madpakke": ["1970", "Den usunde"],
+            "imgurl": "https://i.imgur.com/ghKnKtD.png",
+            "besked": "Vidste du godt at Kartoflen hører til blandt verdens mest dyrkede afgrøder?"
+            
     },
-    {
-      "name": "Æg",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/3iGLhc9.png"
+        {
+            "name": "Æg",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/3iGLhc9.png",
+             "besked": "Vidste du godt at et af de helt store plusser er æggets proteiner, som er af højeste kvalitet?"
+            
     }
   ],
-  "halvfjerdserMadkasseCompare": [{
-      "name": "Agurk",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/W07QaXJ.png"
+    "halvfjerdserMadkasseCompare": [{
+            "name": "Agurk",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/W07QaXJ.png"
     },
-    {
-      "name": "Gulerod",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/ET7cLkH.png"
+        {
+            "name": "Gulerod",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/ET7cLkH.png"
     },
-    {
-      "name": "Hamburgerryg",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/SX3ZaGC.png"
+        {
+            "name": "Hamburgerryg",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/SX3ZaGC.png"
     },
-    {
-      "name": "Leverpostej",
-      "madpakke": ["1970"],
-      "imgurl": "https://i.imgur.com/eoWEt7G.png"
+        {
+            "name": "Leverpostej",
+            "madpakke": ["1970"],
+            "imgurl": "https://i.imgur.com/eoWEt7G.png"
     },
-    {
-      "name": "Rugbrød",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/hmFjpPR.png"
+        {
+            "name": "Rugbrød",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/hmFjpPR.png"
     },
-    {
-      "name": "Rullepølse",
-      "madpakke": ["1970"],
-      "imgurl": "https://i.imgur.com/t5x6WpK.png"
+        {
+            "name": "Rullepølse",
+            "madpakke": ["1970"],
+            "imgurl": "https://i.imgur.com/t5x6WpK.png"
     },
-    {
-      "name": "Spegepølse",
-      "madpakke": ["1970"],
-      "imgurl": "https://i.imgur.com/Uu7q4uZ.png"
+        {
+            "name": "Spegepølse",
+            "madpakke": ["1970"],
+            "imgurl": "https://i.imgur.com/Uu7q4uZ.png"
     },
-    {
-      "name": "Røde pølser",
-      "madpakke": ["1970", "Den usunde"],
-      "imgurl": "https://i.imgur.com/J3VyVFX.png"
+        {
+            "name": "Røde pølser",
+            "madpakke": ["1970", "Den usunde"],
+            "imgurl": "https://i.imgur.com/J3VyVFX.png"
     },
-    {
-      "name": "Kartoffel",
-      "madpakke": ["1970", "Den usunde"],
-      "imgurl": "https://i.imgur.com/ghKnKtD.png"
+        {
+            "name": "Kartoffel",
+            "madpakke": ["1970", "Den usunde"],
+            "imgurl": "https://i.imgur.com/ghKnKtD.png"
     },
-    {
-      "name": "Æg",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/3iGLhc9.png"
+        {
+            "name": "Æg",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/3iGLhc9.png"
     }
   ],
-  "sundMadkasseCompare": [{
-      "name": "Agurk",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/W07QaXJ.png"
+    "sundMadkasseCompare": [{
+            "name": "Agurk",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/W07QaXJ.png"
     },
-    {
-      "name": "Banan",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/YODd2B1.png"
+        {
+            "name": "Banan",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/YODd2B1.png"
     },
-    {
-      "name": "Falafel",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/n3NdIWq.png"
+        {
+            "name": "Falafel",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/n3NdIWq.png"
     },
-    {
-      "name": "Gulerod",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/ET7cLkH.png"
+        {
+            "name": "Gulerod",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/ET7cLkH.png"
     },
-    {
-      "name": "Hamburgerryg",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/SX3ZaGC.png"
+        {
+            "name": "Hamburgerryg",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/SX3ZaGC.png"
     },
-    {
-      "name": "Peberfrugt",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/vuw5KZP.png"
+        {
+            "name": "Peberfrugt",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/vuw5KZP.png"
     },
-    {
-      "name": "Pære",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/6BNv8MF.png"
+        {
+            "name": "Pære",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/6BNv8MF.png"
     },
-    {
-      "name": "Rugbrød",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/hmFjpPR.png"
+        {
+            "name": "Rugbrød",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/hmFjpPR.png"
     },
-    {
-      "name": "Æble",
-      "madpakke": ["Den sunde"],
-      "imgurl": "https://i.imgur.com/A4JQSKi.png"
+        {
+            "name": "Æble",
+            "madpakke": ["Den sunde"],
+            "imgurl": "https://i.imgur.com/A4JQSKi.png"
     },
-    {
-      "name": "Æg",
-      "madpakke": ["1970", "Den sunde"],
-      "imgurl": "https://i.imgur.com/3iGLhc9.png"
+        {
+            "name": "Æg",
+            "madpakke": ["1970", "Den sunde"],
+            "imgurl": "https://i.imgur.com/3iGLhc9.png"
     }
   ],
-  "usundMadkasseCompare": [{
-      "name": "Yoghurt",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/rRYA9rC.png"
+    "usundMadkasseCompare": [{
+            "name": "Yoghurt",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/rRYA9rC.png"
     },
-    {
-      "name": "Ostehaps",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/8zKZkvl.png"
+        {
+            "name": "Ostehaps",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/8zKZkvl.png"
     },
-    {
-      "name": "Mælkesnitte",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/Zzmt4g3.png"
+        {
+            "name": "Mælkesnitte",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/Zzmt4g3.png"
     },
-    {
-      "name": "Cheez Dippers",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/icswEPy.png"
+        {
+            "name": "Cheez Dippers",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/icswEPy.png"
     },
-    {
-      "name": "Toast brød",
-      "madpakke": ["Den usunde"],
-      "imgurl": "https://i.imgur.com/ojTElwE.png"
+        {
+            "name": "Toast brød",
+            "madpakke": ["Den usunde"],
+            "imgurl": "https://i.imgur.com/ojTElwE.png"
     },
-    {
-      "name": "Røde pølser",
-      "madpakke": ["1970", "Den usunde"],
-      "imgurl": "https://i.imgur.com/J3VyVFX.png"
+        {
+            "name": "Røde pølser",
+            "madpakke": ["1970", "Den usunde"],
+            "imgurl": "https://i.imgur.com/J3VyVFX.png"
     },
-    {
-      "name": "Kartoffel",
-      "madpakke": ["1970", "Den usunde"],
-      "imgurl": "https://i.imgur.com/ghKnKtD.png"
+        {
+            "name": "Kartoffel",
+            "madpakke": ["1970", "Den usunde"],
+            "imgurl": "https://i.imgur.com/ghKnKtD.png"
     }
   ]
 }
