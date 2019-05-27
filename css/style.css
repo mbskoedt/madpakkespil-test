@@ -5,13 +5,13 @@ body {
 #home {
   width: 100vw;
   height: 100vh;
-  background-image: url(/img/slagterbaggrund.png);
+  background-image: url(../img/slagterbaggrund.png);
   background-size: cover;
 }
-
+/*
 p {
   display: inline;
-}
+}*/
 
 /* Ole fortæller */
 
@@ -31,7 +31,7 @@ p {
   right: 9%;
 }
 
-.translate {
+.intro-translate {
   width: 200px;
   height: 75px;
   background-image: url(../img/klinkebaggrund.png);
@@ -41,7 +41,7 @@ p {
   box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
 }
 
-.translate img {
+.intro-translate img {
   width: 75px;
 }
 
@@ -60,7 +60,7 @@ p {
 .intro-box {
   top: 150px;
   left: 90px;
-  width: 50vw;
+  width: 1000px;
   border-radius: 15px;
   background: #ffffff;
   font-family: 'Ubuntu', sans-serif;
@@ -92,7 +92,6 @@ p {
   overflow: hidden;
 }
 /*
-
 .typewriter p:nth-child(1) {
   width: 60px;
   opacity: 0;
@@ -155,8 +154,7 @@ p {
   animation: type 4.5s steps(40, end);
   animation-delay: 22s;
   animation-fill-mode: forwards;
-}
-*/
+}*/
 
 @keyframes type {
   0% {
@@ -213,20 +211,18 @@ p {
   padding-bottom: 0.2%;
   border: 4px white solid;
   width: 20%;
-  margin-left: 40%;
+  margin-left: 35%;
   height: 20px;
   text-align: center;
   box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
   text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
   cursor: pointer;
 }
-
 /*
 .introknap-animation {
   margin-top: 5%;
   animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 27.5s both;
-}
-*/
+}*/
 
 @keyframes scale-in-hor-center {
   0% {
@@ -320,7 +316,7 @@ p {
 }
 
 .blackboard {
-  background-image: url(/img/blackboard.jpg);
+  background-image: url(../img/blackboard.jpg);
   width: 40vw;
   height: 25vw;
   position: relative;
@@ -362,6 +358,7 @@ p {
   box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
   text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
   animation: heartbeat 2.5s ease-in-out 2s infinite both;
+  cursor: pointer;
 }
 
 @-webkit-keyframes heartbeat {
@@ -450,14 +447,14 @@ p {
 .resultat {
   width: 65%;
   height: 100vh;
-  background-image: url(/img/klinkebaggrund.png);
+  background-image: url(../img/klinkebaggrund.png);
   position: absolute;
 }
 
 #slagter-ole-container {
   width: 35%;
   height: 100vh;
-  background-image: url(/img/slagterbaggrund.png);
+  background-image: url(../img/slagterbaggrund.png);
   background-size: cover;
   position: absolute;
   right: 0;
@@ -581,14 +578,14 @@ p {
 
 .feedback {
   width: 100%;
-  position: absolute:
+  position: absolute;
 }
 
 /*translate*/
 .translate {
   width: 200px;
   height: 75px;
-  background-image: url(/img/klinkebaggrund.png);
+  background-image: url(../img/klinkebaggrund.png);
   background-size: cover;
   position: absolute;
   right: 20px;
