@@ -21,7 +21,6 @@ p {
   display: inline;
 }*/
 /* Ole fortæller */
-
 #intro-side {
   position: relative;
   background-image: url(../img/slagterbaggrund.png);
@@ -467,7 +466,7 @@ p {
   position: absolute;
 }
 
-#slagter-ole-container {
+.slagter-ole-container {
   width: 35%;
   height: 100vh;
   background-image: url(../img/slagterbaggrund.png);
@@ -597,6 +596,52 @@ p {
   position: absolute;
 }
 
+/* 70'er madpakke */
+#halvfjers {
+  position: relative;
+}
+
+.halvfjers {
+  width: 65%;
+  height: 100vh;
+  background-image: url(../img/klinkebaggrund.png);
+  position: absolute;
+}
+
+.madkasse-info {
+  position: absolute;
+  width: 20%;
+  left: 40%;
+  top: 35%;
+}
+
+/* 70'er madpakke slut */
+/* Den sunde madpakke */
+#sund {
+  position: relative;
+}
+
+.sund {
+  width: 65%;
+  height: 100vh;
+  background-image: url(../img/klinkebaggrund.png);
+  position: absolute;
+}
+
+/* Den sunde madpakke slut */
+/* Den usunde madpakke */
+#usund {
+  position: relative;
+}
+
+.usund {
+  width: 65%;
+  height: 100vh;
+  background-image: url(../img/klinkebaggrund.png);
+  position: absolute;
+}
+
+/* Den sunde madpakke slut */
 /*translate*/
 .translate {
   width: 200px;
@@ -636,6 +681,7 @@ p {
 .madkasser img {
   width: 200px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 #feedback {
