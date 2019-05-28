@@ -232,12 +232,12 @@ function showMadvare() {
   console.log(madvarerArray);
   if (i < madvarerArray.length) {
     document.getElementById('madvare').innerHTML = `
-  <img src="${madvarerArray[i].imgurl}" draggable="true" ondragstart="drag(event)" alt="${madvarerArray[i].name}" id="${madvarerArray[i].name}">
+  <img src="${madvarerArray[i].imgurl}" draggable="true" ondragstart="drag(event)" alt="${madvarerArray[i].name}" id="${madvarerArray[i].name}, draggable">
   `;
     document.getElementById('resultatTale').innerHTML = `
 <p id="forklaring">${madvarerArray[i].besked}</p>
 `;
-document.getElementById('tavleTekst').innerHTML = `
+    document.getElementById('tavleTekst').innerHTML = `
 <p id="madvareTekst">${madvarerArray[i].name}</p>
 `;
   };
@@ -254,6 +254,16 @@ document.getElementById('tavleTekst').innerHTML = `
 };
 
 // drag and drop
+
+let draggable = document.getElementById('draggable');
+draggable.addEventListener('touchmove', function(event) {
+  let touch = event.targetTouches[0];
+
+  // Place element where the finger is
+  draggable.style.left = touch.pageX - 25 + 'px';
+  draggable.style.top = touch.pageY - 25 + 'px';
+  event.preventDefault();
+}, false);
 
 function allowDrop(ev) {
   ev.preventDefault();
