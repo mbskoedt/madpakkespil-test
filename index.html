@@ -3,9 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="author" content="Mors drenge">
   <title>Det store madpakkespil</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -62,8 +60,15 @@
         <img src="img/madkasse-usund.png" alt="usund madkasse" ondrop="dropUsund(event)" ondragover="allowDrop(event)">
       </section>
     </article>
-    <article id="slagter-ole-container">
+    <article class="slagter-ole-container">
       <div class="translate">
+        <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
+        <img src="img/renslagter2.png" class="slagterole">
+        <div class="box sb">
+          <div id="resultatTale"> </div>
+          <a onclick="showPage('resultat')" class="slutspil">SE RESULTAT</a>
+        </div>
         <a class="britisk" href=""><img src="img/britisk.png" alt="Engelsk"></a>
         <a class="dansk" href=""><img src="img/dansk.png" alt="Dansk"></a>
       </div>
@@ -78,24 +83,69 @@
   <section id="resultat" class="page">
     <article class="resultat">
       <div class="madkasser">
-        <a href=""><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
-        <a href=""><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
-        <a href=""> <img src="img/madkasse-vegansk.png" alt="madkasseikon"></a>
+        <a onclick="showPage('halvfjers')"><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
+        <a onclick="showPage('sund')"><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
+        <a onclick="showPage('usund')"> <img src="img/madkasse-usund.png" alt="madkasseikon"></a>
       </div>
       <img src="img/veagt.png" class="vaegt" alt="vægt">
       <img src="img/brunnaal.png" alt="nål" class="naal">
-      <p id="score">mit resultat</p>
+      <p id="score">Mit resultat</p>
     </article>
-    <article id="slagter-ole-container">
+    <article class="slagter-ole-container">
       <div class="translate">
-        <a class="britisk" href=""><img src="img/britisk.png" alt="danskflag"></a>
-        <a class="dansk" href=""><img src="img/dansk.png" alt="danskflag"></a>
+        <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
       <div class="box sb">
         <p id="feedback"> </p>
-        <a onclick="showPage('halvfjerser')" class="slutspil">Spil Igen </a>
+        <a onclick="showPage('')" class="slutspil">SPIL IGEN</a>
       </div>
+    </article>
+  </section>
+
+  <!-- 70'er madpakke -->
+
+  <section id="halvfjers" class="page">
+    <article class="halvfjers">
+      <img src="img/madkasse-70er.png" alt="madkasseikon" class="madkasse-info">
+    </article>
+    <article class="slagter-ole-container">
+      <div class="translate">
+        <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
+      </div>
+      <img src="img/renslagter2.png" class="slagterole">
+    </article>
+  </section>
+
+  <!-- Den sunde madpakke -->
+
+  <section id="sund" class="page">
+    <article class="sund">
+      <img src="img/madkasse-den-sunde.png" alt="madkasseikon" class="madkasse-info">
+    </article>
+    <article class="slagter-ole-container">
+      <div class="translate">
+        <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
+      </div>
+      <img src="img/renslagter2.png" class="slagterole">
+    </article>
+  </section>
+
+  <!-- Den usunde madpakke -->
+
+  <section id="usund" class="page">
+    <article class="usund">
+      <img src="img/madkasse-usund.png" alt="madkasseikon" class="madkasse-info">
+    </article>
+    <article class="slagter-ole-container">
+      <div class="translate">
+        <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="Engelsk"></a>
+        <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
+      </div>
+      <img src="img/renslagter2.png" class="slagterole">
     </article>
   </section>
 
@@ -153,7 +203,7 @@
         <img src="img/madkasse-usund.png" alt="Unhealthy lunch" ondrop="dropUsund(event)" ondragover="allowDrop(event)">
       </section>
     </article>
-    <article id="slagter-ole-container">
+    <article class="slagter-ole-container">
       <div class="translate">
         <a class="britisk" href=""><img src="img/britisk.png" alt="Engelsk"></a>
         <a class="dansk" href=""><img src="img/dansk.png" alt="Dansk"></a>
@@ -161,7 +211,7 @@
       <img src="img/renslagter2.png" class="slagterole">
       <div class="box sb">
         <p id="feedback"> </p>
-        <a onclick="showPage('')" class="slutspil">PLAY AGAIN</a>
+        <a onclick="showPage('')" class="slutspil">VIEW RESULT</a>
       </div>
     </article>
   </section>
@@ -171,15 +221,15 @@
   <section id="resultat-eng" class="page">
     <article class="resultat">
       <div class="madkasser">
-        <a href=""><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
-        <a href=""><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
-        <a href=""> <img src="img/madkasse-vegansk.png" alt="madkasseikon"></a>
+        <a onclick="showPage('')"><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
+        <a onclick="showPage('')"><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
+        <a onclick="showPage('')"> <img src="img/madkasse-vegansk.png" alt="madkasseikon"></a>
       </div>
       <img src="img/veagt.png" class="vaegt" alt="vægt">
       <img src="img/brunnaal.png" alt="nål" class="naal">
       <p id="score">My result</p>
     </article>
-    <article id="slagter-ole-container">
+    <article class="slagter-ole-container">
       <div class="translate">
         <a class="britisk" href=""><img src="img/britisk.png" alt="Engelsk"></a>
         <a class="dansk" href=""><img src="img/dansk.png" alt="Dansk"></a>
