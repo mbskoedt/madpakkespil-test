@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice|Ubuntu|Walter+Turncoat&display=swap');
+
 body {
   margin: 0;
 }
@@ -16,10 +18,10 @@ body {
   background-size: cover;
 }
 
-/*
-p {
+#feedback p {
   display: inline;
-}*/
+}
+
 /* Ole fortæller */
 #intro-side {
   position: relative;
@@ -616,6 +618,10 @@ p {
 
 /* 70'er madpakke */
 #halvfjers {
+  position: relative;
+}
+
+#seventy {
   position: relative;
 }
 
