@@ -55,6 +55,7 @@ p {
   position: absolute;
   right: 20px;
   box-shadow: 1px 7px 9px 5px rgba(0, 0, 0, 0.59);
+  cursor: pointer;
 }
 
 .intro-translate img {
@@ -74,6 +75,7 @@ p {
 }
 
 .intro-box {
+  width: 52vw;
   top: 150px;
   left: 90px;
   border-radius: 15px;
@@ -608,6 +610,7 @@ p {
 
 .translate img {
   width: 75px;
+  cursor: pointer;
 }
 
 .britisk {
