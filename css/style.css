@@ -594,6 +594,7 @@ body {
 }
 
 .slutspil {
+  cursor: pointer;
   font-family: 'Spicy Rice', cursive;
   font-weight: 100;
   letter-spacing: 2px;
