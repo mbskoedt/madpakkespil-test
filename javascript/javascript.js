@@ -215,16 +215,17 @@ function showMadvare() {
     document.getElementById('tavleTekst').innerHTML = `
 <p id="madvareTekst">${madvarerArray[i].name}</p>
 `;
-    let draggable = document.getElementById('draggable');
+    let draggable = document.getElementById('madvare');
 
     draggable.addEventListener('touchmove', function(event) {
       let touch = event.targetTouches[0];
 
       // Place element where the finger is
-      draggable.style.left = touch.pageX - 25 + 'px';
-      draggable.style.top = touch.pageY - 25 + 'px';
+      draggable.style.left = touch.pageX - 600 + 'px';
+      draggable.style.top = touch.pageY - 200 + 'px';
       event.preventDefault();
     }, false);
+
   };
   if (i == madvarerArray.length) {
     document.getElementById('madvare').classList.add("display-none");

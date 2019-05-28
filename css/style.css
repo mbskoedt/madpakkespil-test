@@ -315,7 +315,7 @@ body {
 
 #madvare {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   justify-content: center;
   top: 25vh;
@@ -623,7 +623,7 @@ body {
 }
 
 /* 70'er madpakke */
-#halvfjers {
+#halvfjerds {
   position: relative;
 }
 
@@ -631,7 +631,7 @@ body {
   position: relative;
 }
 
-.halvfjers {
+.halvfjerds {
   width: 65%;
   height: 100vh;
   background-image: url(../img/klinkebaggrund.png);
