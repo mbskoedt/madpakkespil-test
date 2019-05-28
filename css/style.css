@@ -277,6 +277,14 @@ p {
   height: 100%;
 }
 
+#tavle {
+  position: absolute;
+  width: 50%;
+  height: 30vh;
+  margin-left: 25%;
+  z-index: 1;
+}
+
 .madkasser-spillet {
   position: absolute;
   z-index: 1;
@@ -461,7 +469,7 @@ p {
 }
 
 .resultat {
-  width: 65%;
+  width: 65vw;
   height: 100vh;
   background-image: url(../img/klinkebaggrund.png);
   position: absolute;
