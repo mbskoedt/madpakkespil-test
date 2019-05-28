@@ -237,11 +237,14 @@ function showMadvare() {
     document.getElementById('resultatTale').innerHTML = `
 <p id="forklaring">${madvarerArray[i].besked}"<p>
 `;
+document.getElementById('tavleTekst').innerHTML = `
+<p id="madvareTekst">${madvarerArray[i].name}<p>
+`;
   };
-  console.log(i);
   if (i == madvarerArray.length) {
     document.getElementById('madvare').classList.add("display-none");
     document.getElementById('forklaring').classList.add("display-none");
+    document.getElementById('madvareTekst').classList.add("display-none");
     document.getElementById('resultatTale').innerHTML = `
     <p id="forklaring">Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>
     <a onclick="tale()" class="slutspil">Se resultat</a>`;

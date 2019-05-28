@@ -276,13 +276,22 @@ p {
   height: 100%;
 }
 
-#tavle {
+#tavleTekst {
+  background-image: url("../img/blackboard.jpg");
   position: absolute;
   width: 50%;
   height: 30vh;
   margin-left: 25%;
   z-index: 1;
   margin-top: 5%;
+}
+
+#madvareTekst {
+  font-size: 4rem;
+  color: white;
+  display:flex;
+  justify-content: center;
+  margin-top: 8vh;
 }
 
 .madkasser-spillet {
