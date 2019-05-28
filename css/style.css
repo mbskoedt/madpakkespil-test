@@ -330,6 +330,10 @@ body {
   display: none !important;
 }
 
+.opacity {
+  opacity: 0.2;
+}
+
 /* forside */
 .indhold {
   position: relative;

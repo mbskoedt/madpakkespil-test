@@ -275,17 +275,6 @@ function dropUsund(ev) {
   showMadvare();
 }
 
-// vis nyt array efter sortering
-
-function appendHalvfjerdserMadkasseArray(item) {
-  for (let item of halvfjerdserMadkasseArray) {
-    item.classList.remove("display-none");
-    console.log(item);
-    document.getElementById('slagterOleContainer').innerHTML +=
-      `<img src="${item.currentSrc}" width="300px"; z-index="10";>`;
-  };
-};
-
 /* giv resultat efter antal rigtige under vægt */
 
 let score = document.querySelector('#score');
@@ -306,3 +295,23 @@ function tale() {
 }
 
 tale();
+
+// Vis madvarer i deres respektive arrays
+
+
+// få fat i score
+
+function showHalvfjerdserMadkasseArray(halvfjerdserMadCompare) {
+  for (halvfjerdserMadCompare of halvfjerdserMadkasseCompare) {
+    console.log(`${halvfjerdserMadCompare.name}`);
+    document.getElementById('halvfjerds').innerHTML += `
+    <img src="${halvfjerdserMadCompare.imgurl}" alt="${halvfjerdserMadCompare.name}" id="${halvfjerdserMadCompare.name}" style="position: absolute">
+    `
+  /*   for (let halvfjerdserMad of halvfjerdserMadkasseArray) {
+      if (halvfjerdserMadCompare.name === halvfjerdserMad.name) {
+        console.log(halvfjerdserMadCompare);
+        document.getElementById(`${halvfjerdserMadCompare.name}`).classList.remove("opacity");
+      }
+    } */
+  }
+}
