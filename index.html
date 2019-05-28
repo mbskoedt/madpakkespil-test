@@ -44,7 +44,7 @@
       <p><span class="yellow">den sunde madpakke</span> og <span class="red">den usunde madpakke</span>.</p>
       <p>Kan du finde ud af, hvilke råvarer, der skal i de forskellige madpakker?</p>
       <div class="introknap-animation">
-        <a class="introknap" onclick="showPage('spillet')">TRYK FOR START</a>
+        <a class="introknap" onclick="showPage('spillet'), showMadvare()">TRYK FOR START</a>
       </div>
     </div>
     <img src="img/renslagter2.png" alt="Slagter Ole" class="intro-slagter">
@@ -54,7 +54,6 @@
   <section id="spillet" class="page">
     <article class="resultat">
       <section id="madvare">
-        <img src="img/madvare/Agurk.png" draggable="true" ondragstart="drag(event)" id="drag">
       </section>
       <section class="madkasser-spillet">
         <img src="img/madkasse-70er.png" alt="70'er madkasse" ondrop="dropHalvfjerdser(event)" ondragover="allowDrop(event)">
@@ -70,7 +69,6 @@
       <img src="img/renslagter2.png" class="slagterole">
       <div class="box sb">
         <div id="resultatTale">
-          <p id="forklaring">Vidste du godt...</p>
         </div>
         <a onclick="tale()" class="slutspil">Se resultat</a>
       </div>

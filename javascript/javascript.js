@@ -240,8 +240,8 @@ function showMadvare() {
     i++;
   };
   console.log(i);
-  if (i == madvarerArray.length + 1) {
-    document.getElementById('madvare').classList.add("display-none"); 
+  if (i == madvarerArray.length) {
+    document.getElementById('madvare').classList.add("display-none");
     document.getElementById('resultatTale').innerHTML +=
       `'<p id="forklaring">Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>'`
   };
@@ -261,7 +261,6 @@ function dropHalvfjerdser(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("image");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById(data).classList.add("display-none");
   halvfjerdserMadkasseArray.push(document.getElementById(data));
   console.log(halvfjerdserMadkasseArray);
   showMadvare();
@@ -271,7 +270,6 @@ function dropSund(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("image");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById(data).classList.add("display-none");
   sundMadkasseArray.push(document.getElementById(data));
   console.log(sundMadkasseArray);
   showMadvare();
@@ -281,7 +279,6 @@ function dropUsund(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("image");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById(data).classList.add("display-none");
   usundMadkasseArray.push(document.getElementById(data));
   console.log(usundMadkasseArray);
   showMadvare();
