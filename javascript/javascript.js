@@ -229,16 +229,21 @@ function appendUsundMadkasseCompare(usundMadkasseCompare) {
 // viser ny madvare ved hver drop
 
 function showMadvare() {
-  for (i = 0; i < madvarerArray.length; i++) {
-    document.getElementById('madvare').innerHTML += `
+  console.log(madvarerArray);
+  if (i < madvarerArray.length) {
+    document.getElementById('madvare').innerHTML = `
   <img src="${madvarerArray[i].imgurl}" draggable="true" ondragstart="drag(event)" alt="${madvarerArray[i].name}" id="${madvarerArray[i].name}">
   `;
-  document.getElementById('besked').innerHTML += `
-<p>${madvarerArray[i].besked}"<p>
+    document.getElementById('resultatTale').innerHTML = `
+<p id="forklaring">${madvarerArray[i].besked}"<p>
 `;
-    if (i + 1 == madvarerArray.length) {
-      document.getElementById('resultatTale').innerHTML += '<p>Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>'
-    };
+    i++;
+  };
+  console.log(i);
+  if (i == madvarerArray.length) {
+    document.getElementById('madvare').classList.add("display-none");
+    document.getElementById('resultatTale').innerHTML +=
+      `'<p id="forklaring">Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>'`
   };
 };
 
@@ -256,7 +261,6 @@ function dropHalvfjerdser(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("image");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById(data).classList.add("display-none");
   halvfjerdserMadkasseArray.push(document.getElementById(data));
   console.log(halvfjerdserMadkasseArray);
   showMadvare();
@@ -266,7 +270,6 @@ function dropSund(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("image");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById(data).classList.add("display-none");
   sundMadkasseArray.push(document.getElementById(data));
   console.log(sundMadkasseArray);
   showMadvare();
@@ -276,7 +279,6 @@ function dropUsund(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("image");
   ev.target.appendChild(document.getElementById(data));
-  document.getElementById(data).classList.add("display-none");
   usundMadkasseArray.push(document.getElementById(data));
   console.log(usundMadkasseArray);
   showMadvare();
