@@ -191,11 +191,6 @@ fetch('json/madvarer.json')
   .then(function(json) {
     console.log(json);
     appendMadvarer(json.madvarer);
-    /*
-    appendHalvfjerdserMadkasseCompare(json.halvfjerdserMadkasseCompare);
-    appendSundMadkasseCompare(json.sundMadkasseCompare);
-    appendUsundMadkasseCompare(json.usundMadkasseCompare);
-    */
   });
 
 // skubber fetchet data ind i nyt array
@@ -205,26 +200,6 @@ function appendMadvarer(madvarer) {
     madvarerArray.push(madvare);
   };
 };
-
-/*
-function appendHalvfjerdserMadkasseCompare(halvfjerdserMadkasseCompare) {
-  for (let madvareHalvfjerdserMadkasse of halvfjerdserMadkasseCompare) {
-    halvfjerdserMadkasseCompare.push(madvareHalvfjerdserMadkasse);
-  };
-};
-
-function appendSundMadkasseCompare(sundMadkasseCompare) {
-  for (let madvareSundMadkasseCompare of sundMadkasseCompare) {
-    sundMadkasseCompare.push(madvareSundMadkasseCompare);
-  };
-};
-
-function appendUsundMadkasseCompare(usundMadkasseCompare) {
-  for (let madvareUsundMadkasseCompare of usundMadkasseCompare) {
-    usundMadkasseCompare.push(madvareUsundMadkasseCompare);
-  };
-};
-*/
 
 // viser ny madvare ved hver drop
 
@@ -277,7 +252,7 @@ function dropHalvfjerdser(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("image");
   ev.target.appendChild(document.getElementById(data));
-  halvfjerdserMadkasseArray.push(document.getElementById(data));
+  halvfjerdserMadkasseArray.push(madvarerArray[i]);
   console.log(halvfjerdserMadkasseArray);
   showMadvare();
 }
@@ -286,7 +261,7 @@ function dropSund(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("image");
   ev.target.appendChild(document.getElementById(data));
-  sundMadkasseArray.push(document.getElementById(data));
+  sundMadkasseArray.push(madvarerArray[i]);
   console.log(sundMadkasseArray);
   showMadvare();
 }
@@ -295,7 +270,7 @@ function dropUsund(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("image");
   ev.target.appendChild(document.getElementById(data));
-  usundMadkasseArray.push(document.getElementById(data));
+  usundMadkasseArray.push(madvarerArray[i]);
   console.log(usundMadkasseArray);
   showMadvare();
 }
@@ -317,18 +292,17 @@ let score = document.querySelector('#score');
 let aladin = 7;
 score.innerHTML = '<p> Dit resultat:</P>' + aladin + '<p>/10 Rigtige</p>';
 
-
-
 /* afgør hvilken feedback slagteren giver, på baggrund af score */
-
 
 function tale() {
 
   if (aladin < 5) {
-    feedback.innerHTML = aladin + '<p> /10 Rigtige,<br><br> det kan du helt sikkert gøre bedre! <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
+    document.getElementById('feedback').innerHTML = aladin + '<p> /10 Rigtige,<br><br> det kan du helt sikkert gøre bedre! <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
   } else if (aladin <= 10) {
-    feedback.innerHTML = aladin + '<p> /10 Rigtige,<br><br> Det var flot, men der er plads til forbedringer <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
+    document.getElementById('feedback').innerHTML = aladin + '<p> /10 Rigtige,<br><br> Det var flot, men der er plads til forbedringer <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
   } else if (aladin > 10) {
-    feedback.innerHTML = aladin + '<p> /10 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
+    document.getElementById('feedback').innerHTML = aladin + '<p> /10 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
   }
 }
+
+tale();
