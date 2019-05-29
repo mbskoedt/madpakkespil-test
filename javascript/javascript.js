@@ -232,11 +232,10 @@ function showMadvare() {
     document.getElementById('forklaring').classList.add("display-none");
     document.getElementById('resultatTale').innerHTML = `
     <p id="forklaring">Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>
-    <a onclick="showPage('resultat')" class="slutspil">Se resultat</a>`;
+    <a onclick="showPage('resultat'); showHalvfjerdserMadkasseArray(); showSundMadkasseArray(); showUsundMadkasseArray()" class="slutspil">Se resultat</a>`;
     document.getElementById('madvareTekst').innerHTML = `
     <p id="madvareTekst">Udsolgt</p>`;
   };
-  i++;
 };
 
 // drag and drop
@@ -255,6 +254,7 @@ function dropHalvfjerdser(ev) {
   ev.target.appendChild(document.getElementById(data));
   halvfjerdserMadkasseArray.push(madvarerArray[i]);
   console.log(halvfjerdserMadkasseArray);
+  i++;
   showMadvare();
 }
 
@@ -264,6 +264,7 @@ function dropSund(ev) {
   ev.target.appendChild(document.getElementById(data));
   sundMadkasseArray.push(madvarerArray[i]);
   console.log(sundMadkasseArray);
+  i++;
   showMadvare();
 }
 
@@ -273,6 +274,7 @@ function dropUsund(ev) {
   ev.target.appendChild(document.getElementById(data));
   usundMadkasseArray.push(madvarerArray[i]);
   console.log(usundMadkasseArray);
+  i++;
   showMadvare();
 }
 
@@ -302,19 +304,20 @@ tale();
 
 // få fat i score
 
-function showHalvfjerdserMadkasseArray(halvfjerdserMadCompare) {
-  for (halvfjerdserMadCompare of halvfjerdserMadkasseCompare) {
-    console.log(`${halvfjerdserMadCompare.name}`);
+function showHalvfjerdserMadkasseArray() {
+  for (let halvfjerdserMadCompare of halvfjerdserMadkasseCompare) {
     document.getElementById('halvfjerdserMadGrid').innerHTML += `
     <img src="${halvfjerdserMadCompare.imgurl}" alt="${halvfjerdserMadCompare.name}" id="${halvfjerdserMadCompare.name}" class="mad opacity">
     `;
     for (let halvfjerdserMad of halvfjerdserMadkasseArray) {
-      if (halvfjerdserMadCompare.name === halvfjerdserMad.name) {
-        console.log(`${halvfjerdserMad.name}`);
-        document.getElementById(`${halvfjerdserMadCompare.name}`).classList.remove("opacity");
-      };
-    };
-  };
+      if (halvfjerdserMad) {
+        if (halvfjerdserMadCompare.name === halvfjerdserMad.name) {
+
+          document.getElementById(`${halvfjerdserMadCompare.name}`).classList.add("show");
+        }
+      }
+    }
+  }
 };
 
 function showSundMadkasseArray(sundMadCompare) {
@@ -322,13 +325,29 @@ function showSundMadkasseArray(sundMadCompare) {
     document.getElementById('sundMadGrid').innerHTML += `
     <img src="${sundMadCompare.imgurl}" alt="${sundMadCompare.name}" id="${sundMadCompare.name}" class="mad opacity">
     `;
-  };
-};
+    for (let sundMad of sundMadkasseArray) {
+      if (sundMad) {
+        if (sundMadCompare.name === sundMad.name) {
+
+          document.getElementById(`${sundMadCompare.name}`).classList.add("show");
+        }
+      }
+    }
+  }
+}
 
 function showUsundMadkasseArray(usundMadCompare) {
   for (usundMadCompare of usundMadkasseCompare) {
     document.getElementById('usundMadGrid').innerHTML += `
     <img src="${usundMadCompare.imgurl}" alt="${usundMadCompare.name}" id="${usundMadCompare.name}" class="mad opacity">
     `;
-  };
-};
+    for (let usundMad of usundMadkasseArray) {
+      if (usundMad) {
+        if (usundMadCompare.name === usundMad.name) {
+
+          document.getElementById(`${usundMadCompare.name}`).classList.add("show");
+        }
+      }
+    }
+  }
+}
