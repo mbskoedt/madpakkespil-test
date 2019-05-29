@@ -216,6 +216,8 @@ function showMadvare() {
     document.getElementById('tavleTekst').innerHTML = `
 <p id="madvareTekst">${madvarerArray[i].name}</p>
 `;
+    document.getElementById('antalMadvarer').innerHTML = i +1 + '<p>/20</p>';
+
     let draggable = document.getElementById('madvare');
 
     draggable.addEventListener('touchmove', function(event) {
@@ -235,7 +237,7 @@ function showMadvare() {
     <p id="forklaring">Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>
     <a onclick="showPage('resultat'); showHalvfjerdserMadkasseArray(); showSundMadkasseArray(); showUsundMadkasseArray(); tale();" class="slutspil">Se resultat</a>`;
     document.getElementById('madvareTekst').innerHTML = `
-    <p id="madvareTekst">Udsolgt</p>`;
+    <p>Udsolgt</p>`;
   };
 };
 
