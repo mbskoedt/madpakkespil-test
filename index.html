@@ -88,13 +88,13 @@
     </div>
     <article class="resultat">
       <div class="madkasser">
-        <a onclick="showPage('halvfjerds'), showHalvfjerdserMadkasseArray()"><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
+        <a onclick="showPage('halvfjerds')"><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
         <a onclick="showPage('sund')"><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
         <a onclick="showPage('usund')"> <img src="img/madkasse-usund.png" alt="madkasseikon"></a>
       </div>
       <img src="img/veagt.png" class="vaegt" alt="vægt">
       <img src="img/brunnaal.png" alt="nål" class="naal">
-      <p id="score">Mit resultat</p>
+      <div id="score"></div>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -117,6 +117,8 @@
     <a onclick="showPage('spillet')"><img class="genstart" src="img/restart.png" alt="genstart"></a>
     </div>
     <article class="halvfjerds">
+      <div id="halvfjerdserMadGrid" class="madplacering">
+      </div>
       <img src="img/madkasse-70er.png" alt="madkasseikon" class="madkasse-info">
     </article>
     <article class="slagter-ole-container">
@@ -125,6 +127,7 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
+      <a onclick="showPage('resultat')" class="slutspil">tilbage</a>
     </article>
   </section>
 
@@ -136,6 +139,8 @@
     <a onclick="showPage('spillet')"><img class="genstart" src="img/restart.png" alt="genstart"></a>
     </div>
     <article class="sund">
+      <div id="sundMadGrid" class="madplacering">
+      </div>
       <img src="img/madkasse-den-sunde.png" alt="madkasseikon" class="madkasse-info">
     </article>
     <article class="slagter-ole-container">
@@ -144,6 +149,7 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
+      <a onclick="showPage('resultat')" class="slutspil">tilbage</a>
     </article>
   </section>
 
@@ -155,6 +161,8 @@
     <a onclick="showPage('spillet')"><img class="genstart" src="img/restart.png" alt="genstart"></a>
     </div>
     <article class="usund">
+      <div id="usundMadGrid" class="madplacering">
+      </div>
       <img src="img/madkasse-usund.png" alt="madkasseikon" class="madkasse-info">
     </article>
     <article class="slagter-ole-container">
@@ -163,6 +171,7 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
+      <a onclick="showPage('resultat')" class="slutspil">tilbage</a>
     </article>
   </section>
 

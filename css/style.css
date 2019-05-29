@@ -292,9 +292,9 @@ body {
   font-family: 'Walter Turncoat', cursive;
   font-size: 4rem;
   color: white;
-  display:flex;
+  display: flex;
   justify-content: center;
-  margin-top: 8vh;
+  margin-top: 10vh;
 }
 
 .madkasser-spillet {
@@ -318,7 +318,7 @@ body {
   z-index: 3;
   display: flex;
   justify-content: center;
-  top: 25vh;
+  top: 32vh;
 }
 
 #madvare img {
@@ -328,10 +328,6 @@ body {
 
 .display-none {
   display: none !important;
-}
-
-.opacity {
-  opacity: 0.2;
 }
 
 /* forside */
@@ -521,7 +517,7 @@ body {
   top: 47%;
   left: 49.5%;
   transform: translate(-50%, -50%);
-  animation: rotate-bottom 3s 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: rotate-bottom 3s 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 @-webkit-keyframes rotate-bottom {
@@ -533,8 +529,8 @@ body {
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(310deg);
+    transform: rotate(310deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
   }
@@ -549,8 +545,8 @@ body {
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(310deg);
+    transform: rotate(310deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
   }
@@ -565,14 +561,18 @@ body {
   width: 100%;
   text-align: center;
   font-weight: 100;
-  display: inline;
   letter-spacing: 8px;
+  padding-top: 2%;
+}
+
+#score p {
+  display: inline;
 }
 
 .box {
-  top: 25vh;
+  margin-top: 4.3vh;
   left: -240px;
-  width: 300px;
+  width: 30vh;
   border-radius: 15px;
   background: #ffffff;
   font-family: 'Ubuntu', sans-serif;
@@ -582,7 +582,7 @@ body {
   padding-top: 10px;
   padding-right: 50px;
   padding-bottom: 50px;
-  height: 45vh;
+  height: 35vh;
 }
 
 .sb:before {
@@ -594,7 +594,8 @@ body {
   border-right: 50Px solid transparent;
   border-top: 50px solid transparent;
   border-bottom: 50px solid #ffffff;
-  left: 20vw;
+  left: 19vw;
+  top: 25vh;
 }
 
 .slutspil {
@@ -642,7 +643,7 @@ body {
   position: absolute;
   width: 20%;
   left: 40%;
-  top: 35%;
+  top: 30%;
 }
 
 /* 70'er madpakke slut */
@@ -702,7 +703,7 @@ body {
 
 .madkasser {
   position: absolute;
-  left: 11.5vw;
+  left: 15vw;
   top: 7vh;
   z-index: 11111;
   animation: bounce-in-top 2.1s both;
@@ -862,4 +863,101 @@ body {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+}
+
+/* Styling til inde i madpakkerne */
+#halvfjerdserMadGrid {
+  position: absolute;
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#sundMadGrid {
+  position: absolute;
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#usundMadGrid {
+  position: absolute;
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.opacity {
+  opacity: 0.2;
+}
+
+.show {
+  opacity: 1;
+}
+
+.mad {
+  height: 150px;
+}
+
+.madplacering img:nth-child(1) {
+  margin-left: 22%;
+  margin-top: 15%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(2) {
+  margin-left: 65%;
+  margin-top: 15%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(3) {
+  margin-left: 20%;
+  margin-top: 27%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(4) {
+  margin-left: 67%;
+  margin-top: 27%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(5) {
+  margin-left: 23%;
+  margin-top: 39%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(6) {
+  margin-left: 63%;
+  margin-top: 39%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(7) {
+  margin-left: 35%;
+  margin-top: 51%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(8) {
+  margin-left: 55%;
+  margin-top: 51%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(9) {
+  margin-left: 35%;
+  margin-top: 3%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(10) {
+  margin-left: 55%;
+  margin-top: 3%;
+  position: absolute;
 }
