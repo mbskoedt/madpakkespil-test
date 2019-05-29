@@ -78,8 +78,8 @@
     <article class="resultat">
       <div class="madkasser">
         <a onclick="showPage('halvfjerds'), showHalvfjerdserMadkasseArray()"><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
-        <a onclick="showPage('sund')"><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
-        <a onclick="showPage('usund')"> <img src="img/madkasse-usund.png" alt="madkasseikon"></a>
+        <a onclick="showPage('sund'), showSundMadkasseArray()"><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
+        <a onclick="showPage('usund'), showUsundMadkasseArray()"> <img src="img/madkasse-usund.png" alt="madkasseikon"></a>
       </div>
       <img src="img/veagt.png" class="vaegt" alt="vægt">
       <img src="img/brunnaal.png" alt="nål" class="naal">
@@ -102,11 +102,8 @@
 
   <section id="halvfjerds" class="page">
     <article class="halvfjerds">
-<<<<<<< HEAD
       <div id="halvfjerdserMadGrid">
       </div>
-=======
->>>>>>> 034fc8bd925a0b33038515e8ca554e5047f5f503
       <img src="img/madkasse-70er.png" alt="madkasseikon" class="madkasse-info">
     </article>
     <article class="slagter-ole-container">
@@ -123,6 +120,8 @@
 
   <section id="sund" class="page">
     <article class="sund">
+      <div id="sundMadGrid">
+      </div>
       <img src="img/madkasse-den-sunde.png" alt="madkasseikon" class="madkasse-info">
     </article>
     <article class="slagter-ole-container">
@@ -131,6 +130,7 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
+      <a onclick="showPage('resultat')" class="slutspil">tilbage</a>
     </article>
   </section>
 
@@ -138,6 +138,8 @@
 
   <section id="usund" class="page">
     <article class="usund">
+      <div id="usundMadGrid">
+      </div>
       <img src="img/madkasse-usund.png" alt="madkasseikon" class="madkasse-info">
     </article>
     <article class="slagter-ole-container">
@@ -146,6 +148,7 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
+      <a onclick="showPage('resultat')" class="slutspil">tilbage</a>
     </article>
   </section>
 

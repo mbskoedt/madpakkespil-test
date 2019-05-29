@@ -330,10 +330,6 @@ body {
   display: none !important;
 }
 
-.opacity {
-  opacity: 0.2;
-}
-
 /* forside */
 .indhold {
   position: relative;
@@ -854,7 +850,27 @@ body {
   justify-content: flex-start;
 }
 
-.halvfjerdserMad {
+#sundMadGrid {
+  position: absolute;
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#usundMadGrid {
+  position: absolute;
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mad {
   width: 150px;
   height: 150px;
+}
+
+.opacity {
+  opacity: 0.2;
 }

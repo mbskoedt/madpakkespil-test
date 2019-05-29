@@ -297,7 +297,7 @@ function tale() {
 
 tale();
 
-// Vis madvarer i deres respektive arrays
+// Vis madvarer i deres respektive arrays og sammenlign
 
 
 // få fat i score
@@ -306,13 +306,29 @@ function showHalvfjerdserMadkasseArray(halvfjerdserMadCompare) {
   for (halvfjerdserMadCompare of halvfjerdserMadkasseCompare) {
     console.log(`${halvfjerdserMadCompare.name}`);
     document.getElementById('halvfjerdserMadGrid').innerHTML += `
-    <img src="${halvfjerdserMadCompare.imgurl}" alt="${halvfjerdserMadCompare.name}" id="${halvfjerdserMadCompare.name}" class="halvfjerdserMad">
-    `
-  /*   for (let halvfjerdserMad of halvfjerdserMadkasseArray) {
+    <img src="${halvfjerdserMadCompare.imgurl}" alt="${halvfjerdserMadCompare.name}" id="${halvfjerdserMadCompare.name}" class="mad opacity">
+    `;
+    for (let halvfjerdserMad of halvfjerdserMadkasseArray) {
       if (halvfjerdserMadCompare.name === halvfjerdserMad.name) {
-        console.log(halvfjerdserMadCompare);
+        console.log(`${halvfjerdserMad.name}`);
         document.getElementById(`${halvfjerdserMadCompare.name}`).classList.remove("opacity");
-      }
-    } */
-  }
-}
+      };
+    };
+  };
+};
+
+function showSundMadkasseArray(sundMadCompare) {
+  for (sundMadCompare of sundMadkasseCompare) {
+    document.getElementById('sundMadGrid').innerHTML += `
+    <img src="${sundMadCompare.imgurl}" alt="${sundMadCompare.name}" id="${sundMadCompare.name}" class="mad opacity">
+    `;
+  };
+};
+
+function showUsundMadkasseArray(usundMadCompare) {
+  for (usundMadCompare of usundMadkasseCompare) {
+    document.getElementById('usundMadGrid').innerHTML += `
+    <img src="${usundMadCompare.imgurl}" alt="${usundMadCompare.name}" id="${usundMadCompare.name}" class="mad opacity">
+    `;
+  };
+};
