@@ -237,6 +237,7 @@ function showMadvare() {
     document.getElementById('madvareTekst').innerHTML = `
     <p id="madvareTekst">Udsolgt</p>`;
   };
+    displayFinger();
 };
 
 // drag and drop og push madvare til nyt array
@@ -344,3 +345,20 @@ function tale() {
     document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
   }
 }
+
+
+
+
+function displayFinger(){
+    
+    if (madvarerArray[i].name === 'Agurk'){
+    document.getElementById('finger').style.display="inline";
+}
+    else{
+         document.getElementById('finger').style.display="none";
+        
+    }
+    
+}
+
+
