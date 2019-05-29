@@ -517,7 +517,7 @@ body {
   top: 47%;
   left: 49.5%;
   transform: translate(-50%, -50%);
-  animation: rotate-bottom 3s 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: rotate-bottom 3s 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 @-webkit-keyframes rotate-bottom {
@@ -529,8 +529,8 @@ body {
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(310deg);
+    transform: rotate(310deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
   }
@@ -545,8 +545,8 @@ body {
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(310deg);
+    transform: rotate(310deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
   }
@@ -561,8 +561,12 @@ body {
   width: 100%;
   text-align: center;
   font-weight: 100;
-  display: inline;
   letter-spacing: 8px;
+  padding-top: 2%;
+}
+
+#score p {
+  display: inline;
 }
 
 .box {
@@ -698,7 +702,7 @@ body {
 
 .madkasser {
   position: absolute;
-  left: 11.5vw;
+  left: 15vw;
   top: 7vh;
   z-index: 11111;
   animation: bounce-in-top 2.1s both;
