@@ -308,7 +308,7 @@ function showHalvfjerdserMadkasseArray(halvfjerdserMadCompare) {
     document.getElementById('halvfjerdserMadGrid').innerHTML += `
     <img src="${halvfjerdserMadCompare.imgurl}" alt="${halvfjerdserMadCompare.name}" id="${halvfjerdserMadCompare.name}" class="mad opacity">
     `;
-     for (let halvfjerdserMad of halvfjerdserMadkasseArray) {
+    for (let halvfjerdserMad of halvfjerdserMadkasseArray) {
       if (halvfjerdserMadCompare.name === halvfjerdserMad.name) {
         console.log(`${halvfjerdserMad.name}`);
         document.getElementById(`${halvfjerdserMadCompare.name}`).classList.remove("opacity");
