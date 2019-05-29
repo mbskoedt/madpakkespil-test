@@ -110,6 +110,7 @@ body {
   overflow: hidden;
 }
 
+/*
 .typewriter p:nth-child(1) {
   width: 60px;
   opacity: 0;
@@ -172,8 +173,7 @@ body {
   animation: type 4s steps(40, end);
   animation-delay: 16.2s;
   animation-fill-mode: forwards;
-}
-
+}*/
 @keyframes type {
   0% {
     width: 0;
@@ -237,7 +237,7 @@ body {
   cursor: pointer;
 }
 
-
+/*
 .introknap-animation {
   margin-top: 5%;
   animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 20.5s both;
@@ -296,6 +296,15 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
+}
+
+#antalMadvarer {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 4rem;
+  color: white;
+
+  position: relative;
+
 }
 
 .madkasser-spillet {
@@ -851,7 +860,9 @@ body {
     z-index: 100000
 }
 
-
+.genstart{
+    left:5vw;
+}
 
 
 
