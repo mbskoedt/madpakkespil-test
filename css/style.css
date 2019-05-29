@@ -295,7 +295,7 @@ body {
   color: white;
   display: flex;
   justify-content: center;
-  margin-top: 8vh;
+  margin-top: 10vh;
 }
 
 .madkasser-spillet {
@@ -319,7 +319,7 @@ body {
   z-index: 3;
   display: flex;
   justify-content: center;
-  top: 25vh;
+  top: 32vh;
 }
 
 #madvare img {
@@ -518,7 +518,7 @@ body {
   top: 47%;
   left: 49.5%;
   transform: translate(-50%, -50%);
-  animation: rotate-bottom 3s 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: rotate-bottom 3s 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 @-webkit-keyframes rotate-bottom {
@@ -530,8 +530,8 @@ body {
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(310deg);
+    transform: rotate(310deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
   }
@@ -546,8 +546,8 @@ body {
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(310deg);
+    transform: rotate(310deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
   }
@@ -562,14 +562,18 @@ body {
   width: 100%;
   text-align: center;
   font-weight: 100;
-  display: inline;
   letter-spacing: 8px;
+  padding-top: 2%;
+}
+
+#score p {
+  display: inline;
 }
 
 .box {
-  top: 25vh;
+  margin-top: 4.3vh;
   left: -240px;
-  width: 300px;
+  width: 30vh;
   border-radius: 15px;
   background: #ffffff;
   font-family: 'Ubuntu', sans-serif;
@@ -579,7 +583,7 @@ body {
   padding-top: 10px;
   padding-right: 50px;
   padding-bottom: 50px;
-  height: 45vh;
+  height: 35vh;
 }
 
 .sb:before {
@@ -591,7 +595,8 @@ body {
   border-right: 50Px solid transparent;
   border-top: 50px solid transparent;
   border-bottom: 50px solid #ffffff;
-  left: 20vw;
+  left: 19vw;
+  top: 25vh;
 }
 
 .slutspil {
@@ -699,7 +704,7 @@ body {
 
 .madkasser {
   position: absolute;
-  left: 11.5vw;
+  left: 15vw;
   top: 7vh;
   z-index: 11111;
   animation: bounce-in-top 2.1s both;
