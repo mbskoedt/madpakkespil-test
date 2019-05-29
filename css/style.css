@@ -599,6 +599,76 @@ body {
   top: 25vh;
 }
 
+.resultat-box {
+  margin-top: 4.3vh;
+  left: -240px;
+  width: 30vh;
+  border-radius: 15px;
+  background: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  position: relative;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  height: 50vh;
+}
+
+.resultat-sb:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 50px solid #ffffff;
+  border-right: 50Px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid #ffffff;
+  left: 19vw;
+  top: 25vh;
+}
+
+.resultatknap {
+  cursor: pointer;
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+  background-color: #6eba80;
+  padding: 2%;
+  border: 4px white solid;
+  position: absolute;
+  width: 60%;
+  text-align: center;
+  text-transform: uppercase;
+  top: 65%;
+  left: 17%;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.39);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
+}
+
+.resultatknapv2 {
+  cursor: pointer;
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+  background-color: #6eba80;
+  padding: 2%;
+  border: 4px white solid;
+  position: absolute;
+  width: 60%;
+  text-align: center;
+  top: 78%;
+  left: 17%;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.39);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
+}
+
 .slutspil {
   cursor: pointer;
   font-family: 'Spicy Rice', cursive;

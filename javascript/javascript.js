@@ -233,7 +233,7 @@ function showMadvare() {
     document.getElementById('forklaring').classList.add("display-none");
     document.getElementById('resultatTale').innerHTML = `
     <p id="forklaring">Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>
-    <a onclick="showPage('resultat'); showHalvfjerdserMadkasseArray(); showSundMadkasseArray(); showUsundMadkasseArray(); tale();" class="slutspil">Se resultat</a>`;
+    <a onclick="showPage('resultat'); showHalvfjerdserMadkasseArray(); showSundMadkasseArray(); showUsundMadkasseArray(); tale();" class="resultatknap">Se resultat</a>`;
     document.getElementById('madvareTekst').innerHTML = `
     <p id="madvareTekst">Udsolgt</p>`;
   };
