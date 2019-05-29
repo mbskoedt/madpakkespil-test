@@ -849,7 +849,6 @@ body {
   justify-content: flex-start;
 }
 
-<<<<<<< HEAD
 #sundMadGrid {
   position: absolute;
   width: 65vw;
@@ -866,14 +865,6 @@ body {
   justify-content: flex-start;
 }
 
-.mad {
-  width: 150px;
-  height: 150px;
-}
-
-.opacity {
-  opacity: 0.2;
-=======
 .mad {
   height: 150px;
 }
@@ -936,5 +927,4 @@ body {
   margin-left: 55%;
   margin-top: 3%;
   position: absolute;
->>>>>>> 775c384e08bc318cfa5605fdb651b5ec8b3247ee
 }
