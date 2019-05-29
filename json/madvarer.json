@@ -4,7 +4,7 @@
       "name-eng": "Cucumber",
       "madpakke": ["1970", "Den sunde"],
       "imgurl": "https://i.imgur.com/W07QaXJ.png",
-      "besked": "Træk madvaren ned til den madkasse du mener den passer bedst i, en madvare kan godt passe til flere madkasser"
+      "besked": "Træk madvaren ned til den madkasse du mener den passer bedst i. En madvare kan godt passe til flere madkasser"
     },
     {
       "name": "Banan",
@@ -101,14 +101,14 @@
       "name": "Ostehaps",
       "madpakke": ["Den usunde"],
       "imgurl": "https://i.imgur.com/8zKZkvl.png",
-      "besked": " Vidste du godt at Yoghurt er rig på proteiner, B-vitaminer og mineraler? "
+      "besked": "Vidste du godt at Ostehapsen oprindeligt blev produceret som en eksportvare, beregnet til det amerikanske marked, under navnet Cheesesticks?"
     },
     {
       "name": "Mælkesnitte",
       "name-eng": "Kinder Milk Slice",
       "madpakke": ["Den usunde"],
       "imgurl": "https://i.imgur.com/Zzmt4g3.png",
-      "besked": "Vidste du godt at Ostehapsen blev oprindeligt produceret som en eksportvare beregnet til det amerikanske marked under navnet Cheesesticks, hvor det viste sig succesfuldt"
+      "besked": "Vidste du godt, at Mælkesnitten kom til Danmark i 1993? Den indeholder rigtig meget sukker og fedt."
     },
     {
       "name": "Cheez Dippers",
@@ -129,7 +129,7 @@
       "name-eng": "Red sausages",
       "madpakke": ["1970", "Den usunde"],
       "imgurl": "https://i.imgur.com/J3VyVFX.png",
-      "besked": "Vidste du godt at Røde pølser er lavet på svinefars, og engang fik sin røde farve fra små lus?"
+      "besked": "Vidste du godt at Røde pølser er lavet på svinefars, og får sin røde farve fra små lus?"
     },
     {
       "name": "Kartoffel",

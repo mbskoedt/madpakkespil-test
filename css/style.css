@@ -300,11 +300,12 @@ body {
 
 #antalMadvarer {
   font-family: 'Walter Turncoat', cursive;
-  font-size: 4rem;
+  font-size: 2rem;
   color: white;
-
-  position: relative;
-
+  position: absolute;
+  left: 26%;
+  z-index: 5;
+  top: 4%;
 }
 
 .madkasser-spillet {
@@ -846,25 +847,22 @@ body {
   top: 2vh;
 }
 
-.restart{
-    position: relative;
-    width:200px;
-    left:3vw;
-    top:4vh;
-
+.restart {
+  position: relative;
+  width: 200px;
+  left: 3vw;
+  top: 4vh;
 }
 
-.restart img{
-    position: absolute;
-    width: 20%;
-    z-index: 100000
+.restart img {
+  position: absolute;
+  width: 20%;
+  z-index: 100000
 }
 
-.genstart{
-    left:5vw;
+.genstart {
+  left: 5vw;
 }
-
-
 
 @-webkit-keyframes bounce-in-top {
   0% {
@@ -1081,4 +1079,39 @@ body {
   margin-left: 55%;
   margin-top: 3%;
   position: absolute;
+}
+
+#finger {
+  width: 80px;
+  -webkit-animation: slide-bottom 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+  animation: slide-bottom 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+  position: absolute;
+  top: 50vh;
+  left: 30vw;
+  z-index: 100000;
+  display: none;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+  }
 }

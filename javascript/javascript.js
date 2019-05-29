@@ -216,7 +216,7 @@ function showMadvare() {
     document.getElementById('tavleTekst').innerHTML = `
 <p id="madvareTekst">${madvarerArray[i].name}</p>
 `;
-    document.getElementById('antalMadvarer').innerHTML = i +1 + '<p>/20</p>';
+    document.getElementById('antalMadvarer').innerHTML = i +1 +'/20';
 
     let draggable = document.getElementById('madvare');
 
@@ -352,15 +352,13 @@ function tale() {
 
 
 function displayFinger(){
-    
+
     if (madvarerArray[i].name === 'Agurk'){
     document.getElementById('finger').style.display="inline";
 }
     else{
          document.getElementById('finger').style.display="none";
-        
+
     }
-    
+
 }
-
-
