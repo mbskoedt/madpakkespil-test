@@ -843,3 +843,18 @@ body {
     animation-timing-function: ease-out;
   }
 }
+
+/* Styling til inde i madpakkerne */
+
+#halvfjerdserMadGrid {
+  position: absolute;
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.halvfjerdserMad {
+  width: 150px;
+  height: 150px;
+}
