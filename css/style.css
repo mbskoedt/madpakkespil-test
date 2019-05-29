@@ -873,6 +873,10 @@ body {
   opacity: 0.2;
 }
 
+.show {
+  opacity: 1;
+}
+
 .mad {
   height: 150px;
 }
