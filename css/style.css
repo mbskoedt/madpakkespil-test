@@ -294,7 +294,7 @@ body {
   color: white;
   display: flex;
   justify-content: center;
-  margin-top: 8vh;
+  margin-top: 10vh;
 }
 
 .madkasser-spillet {
@@ -318,7 +318,7 @@ body {
   z-index: 3;
   display: flex;
   justify-content: center;
-  top: 25vh;
+  top: 32vh;
 }
 
 #madvare img {
@@ -570,9 +570,9 @@ body {
 }
 
 .box {
-  top: 25vh;
+  margin-top: 4.3vh;
   left: -240px;
-  width: 300px;
+  width: 30vh;
   border-radius: 15px;
   background: #ffffff;
   font-family: 'Ubuntu', sans-serif;
@@ -582,7 +582,7 @@ body {
   padding-top: 10px;
   padding-right: 50px;
   padding-bottom: 50px;
-  height: 45vh;
+  height: 35vh;
 }
 
 .sb:before {
@@ -594,7 +594,8 @@ body {
   border-right: 50Px solid transparent;
   border-top: 50px solid transparent;
   border-bottom: 50px solid #ffffff;
-  left: 20vw;
+  left: 19vw;
+  top: 25vh;
 }
 
 .slutspil {
