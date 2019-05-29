@@ -216,7 +216,7 @@ function showMadvare() {
     document.getElementById('tavleTekst').innerHTML = `
 <p id="madvareTekst">${madvarerArray[i].name}</p>
 `;
-    document.getElementById('antalMadvarer').innerHTML = i +1 +'/20';
+    document.getElementById('antalMadvarer').innerHTML = i +'/20';
 
     let draggable = document.getElementById('madvare');
 
