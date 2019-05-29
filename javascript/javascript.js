@@ -306,9 +306,15 @@ function showHalvfjerdserMadkasseArray(halvfjerdserMadCompare) {
   for (halvfjerdserMadCompare of halvfjerdserMadkasseCompare) {
     console.log(`${halvfjerdserMadCompare.name}`);
     document.getElementById('halvfjerdserMadGrid').innerHTML += `
+<<<<<<< HEAD
     <img src="${halvfjerdserMadCompare.imgurl}" alt="${halvfjerdserMadCompare.name}" id="${halvfjerdserMadCompare.name}" class="mad opacity">
     `;
     for (let halvfjerdserMad of halvfjerdserMadkasseArray) {
+=======
+    <img src="${halvfjerdserMadCompare.imgurl}" alt="${halvfjerdserMadCompare.name}" id="${halvfjerdserMadCompare.name}" class="mad">
+    `
+  /*   for (let halvfjerdserMad of halvfjerdserMadkasseArray) {
+>>>>>>> 775c384e08bc318cfa5605fdb651b5ec8b3247ee
       if (halvfjerdserMadCompare.name === halvfjerdserMad.name) {
         console.log(`${halvfjerdserMad.name}`);
         document.getElementById(`${halvfjerdserMadCompare.name}`).classList.remove("opacity");
