@@ -316,3 +316,7 @@ function showHalvfjerdserMadkasseArray(halvfjerdserMadCompare) {
     } */
   }
 }
+
+
+
+
