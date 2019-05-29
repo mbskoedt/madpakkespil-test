@@ -30,6 +30,7 @@ setDefaultPage();
 
 // global variabel
 
+let aladin = 0;
 let madvarerArray = [];
 let i = 0;
 
@@ -232,7 +233,7 @@ function showMadvare() {
     document.getElementById('forklaring').classList.add("display-none");
     document.getElementById('resultatTale').innerHTML = `
     <p id="forklaring">Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>
-    <a onclick="showPage('resultat'); showHalvfjerdserMadkasseArray(); showSundMadkasseArray(); showUsundMadkasseArray()" class="slutspil">Se resultat</a>`;
+    <a onclick="showPage('resultat'); showHalvfjerdserMadkasseArray(); showSundMadkasseArray(); showUsundMadkasseArray(); tale();" class="slutspil">Se resultat</a>`;
     document.getElementById('madvareTekst').innerHTML = `
     <p id="madvareTekst">Udsolgt</p>`;
   };
@@ -278,31 +279,7 @@ function dropUsund(ev) {
   showMadvare();
 }
 
-/* giv resultat efter antal rigtige under vægt */
-
-let score = document.querySelector('#score');
-let aladin = 7;
-score.innerHTML = '<p> Dit resultat:</P>' + aladin + '<p>/10 Rigtige</p>';
-
-/* afgør hvilken feedback slagteren giver, på baggrund af score */
-
-function tale() {
-
-  if (aladin < 5) {
-    document.getElementById('feedback').innerHTML = aladin + '<p> /10 Rigtige,<br><br> det kan du helt sikkert gøre bedre! <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
-  } else if (aladin <= 10) {
-    document.getElementById('feedback').innerHTML = aladin + '<p> /10 Rigtige,<br><br> Det var flot, men der er plads til forbedringer <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
-  } else if (aladin > 10) {
-    document.getElementById('feedback').innerHTML = aladin + '<p> /10 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
-  }
-}
-
-tale();
-
 // Vis madvarer i deres respektive arrays og sammenlign
-
-
-// få fat i score
 
 function showHalvfjerdserMadkasseArray() {
   for (let halvfjerdserMadCompare of halvfjerdserMadkasseCompare) {
@@ -312,8 +289,8 @@ function showHalvfjerdserMadkasseArray() {
     for (let halvfjerdserMad of halvfjerdserMadkasseArray) {
       if (halvfjerdserMad) {
         if (halvfjerdserMadCompare.name === halvfjerdserMad.name) {
-
           document.getElementById(`${halvfjerdserMadCompare.name}`).classList.add("show");
+            aladin++;
         }
       }
     }
@@ -328,8 +305,9 @@ function showSundMadkasseArray(sundMadCompare) {
     for (let sundMad of sundMadkasseArray) {
       if (sundMad) {
         if (sundMadCompare.name === sundMad.name) {
-
           document.getElementById(`${sundMadCompare.name}`).classList.add("show");
+          aladin++;
+          console.log(aladin);
         }
       }
     }
@@ -344,14 +322,26 @@ function showUsundMadkasseArray(usundMadCompare) {
     for (let usundMad of usundMadkasseArray) {
       if (usundMad) {
         if (usundMadCompare.name === usundMad.name) {
-
           document.getElementById(`${usundMadCompare.name}`).classList.add("show");
+            aladin++
         }
       }
     }
   }
 }
 
+/* giv resultat efter antal rigtige under vægt */
+/* afgør hvilken feedback slagteren giver, på baggrund af score */
 
-
+function tale() {
+  let score = document.querySelector('#score');
+  score.innerHTML = '<p> Dit resultat:</P>' + aladin + '<p>/20 Rigtige</p>';
+  if (aladin < 5) {
+    document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> det kan du helt sikkert gøre bedre! <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
+  } else if (aladin <= 10) {
+    document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> Det var flot, men der er plads til forbedringer <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
+  } else if (aladin > 10) {
+    document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
+  }
+}
 
