@@ -110,7 +110,6 @@ body {
   overflow: hidden;
 }
 
-/*
 .typewriter p:nth-child(1) {
   width: 60px;
   opacity: 0;
@@ -173,7 +172,8 @@ body {
   animation: type 4.5s steps(40, end);
   animation-delay: 22s;
   animation-fill-mode: forwards;
-}*/
+}
+
 @keyframes type {
   0% {
     width: 0;
@@ -237,7 +237,7 @@ body {
   cursor: pointer;
 }
 
-/*
+
 .introknap-animation {
   margin-top: 5%;
   animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 27.5s both;
@@ -731,7 +731,7 @@ body {
     width:200px;
     left:3vw;
     top:4vh;
-    
+
 }
 
 .restart img{
