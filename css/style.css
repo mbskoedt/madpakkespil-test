@@ -110,11 +110,10 @@ body {
   overflow: hidden;
 }
 
-/*
 .typewriter p:nth-child(1) {
   width: 60px;
   opacity: 0;
-  animation: type 1s steps(40, end);
+  animation: type 0.5s steps(40, end);
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
@@ -122,58 +121,59 @@ body {
 .typewriter p:nth-child(2) {
   width: 380px;
   opacity: 0;
-  animation: type 2.5s steps(40, end);
-  animation-delay: 1.5s;
+  animation: type 2s steps(40, end);
+  animation-delay: 0.6s;
   animation-fill-mode: forwards;
 }
 
 .typewriter p:nth-child(3) {
   width: 450px;
   opacity: 0;
-  animation: type 2.5s steps(40, end);
-  animation-delay: 4.5s;
+  animation: type 2s steps(40, end);
+  animation-delay: 2.7s;
   animation-fill-mode: forwards;
 }
 
 .typewriter p:nth-child(4) {
   width: 470px;
   opacity: 0;
-  animation: type 2.5s steps(40, end);
-  animation-delay: 7.5s;
+  animation: type 2s steps(40, end);
+  animation-delay: 4.8s;
   animation-fill-mode: forwards;
 }
 
 .typewriter p:nth-child(5) {
   width: 560px;
   opacity: 0;
-  animation: type 2.5s steps(40, end);
-  animation-delay: 10.5s;
+  animation: type 2s steps(40, end);
+  animation-delay: 6.9s;
   animation-fill-mode: forwards;
 }
 
 .typewriter p:nth-child(6) {
   width: 850px;
   opacity: 0;
-  animation: type 4s steps(40, end);
-  animation-delay: 13.5s;
+  animation: type 3.5s steps(40, end);
+  animation-delay: 9s;
   animation-fill-mode: forwards;
 }
 
 .typewriter p:nth-child(7) {
   width: 680px;
   opacity: 0;
-  animation: type 4s steps(40, end);
-  animation-delay: 17.6s;
+  animation: type 3.5s steps(40, end);
+  animation-delay: 12.6s;
   animation-fill-mode: forwards;
 }
 
 .typewriter p:nth-child(8) {
   width: 940px;
   opacity: 0;
-  animation: type 4.5s steps(40, end);
-  animation-delay: 22s;
+  animation: type 4s steps(40, end);
+  animation-delay: 16.2s;
   animation-fill-mode: forwards;
-}*/
+}
+
 @keyframes type {
   0% {
     width: 0;
@@ -237,10 +237,10 @@ body {
   cursor: pointer;
 }
 
-/*
+
 .introknap-animation {
   margin-top: 5%;
-  animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 27.5s both;
+  animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 20.5s both;
 }
 
 @keyframes scale-in-hor-center {
@@ -647,6 +647,46 @@ body {
   top: 30%;
 }
 
+.madkasseknap-right {
+  cursor: pointer;
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
+  background-color: #6eba80;
+  padding: 1%;
+  border: 4px white solid;
+  position: absolute;
+  width: 15%;
+  text-align: center;
+  top: 87%;
+  left: 77%;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.39);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
+}
+
+.madkasseknap-left {
+  cursor: pointer;
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
+  background-color: #6eba80;
+  padding: 1%;
+  border: 4px white solid;
+  position: absolute;
+  width: 15%;
+  text-align: center;
+  top: 87%;
+  left: 5%;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.39);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
+}
+
 /* 70'er madpakke slut */
 /* Den sunde madpakke */
 #sund {
@@ -731,7 +771,7 @@ body {
     width:200px;
     left:3vw;
     top:4vh;
-    
+
 }
 
 .restart img{
