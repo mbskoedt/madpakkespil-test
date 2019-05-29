@@ -235,10 +235,11 @@ function showMadvare() {
     document.getElementById('forklaring').classList.add("display-none");
     document.getElementById('resultatTale').innerHTML = `
     <p id="forklaring">Nu har jeg ikke flere råvarer i min butik.<br>Klik på knappen for at se resultatet </p>
-    <a onclick="showPage('resultat'); showHalvfjerdserMadkasseArray(); showSundMadkasseArray(); showUsundMadkasseArray(); tale();" class="slutspil">Se resultat</a>`;
+    <a onclick="showPage('resultat'); showHalvfjerdserMadkasseArray(); showSundMadkasseArray(); showUsundMadkasseArray(); tale();" class="resultatknap">Se resultat</a>`;
     document.getElementById('madvareTekst').innerHTML = `
     <p>Udsolgt</p>`;
   };
+    displayFinger();
 };
 
 // drag and drop og push madvare til nyt array
@@ -346,3 +347,20 @@ function tale() {
     document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
   }
 }
+
+
+
+
+function displayFinger(){
+    
+    if (madvarerArray[i].name === 'Agurk'){
+    document.getElementById('finger').style.display="inline";
+}
+    else{
+         document.getElementById('finger').style.display="none";
+        
+    }
+    
+}
+
+

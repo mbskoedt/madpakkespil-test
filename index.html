@@ -61,6 +61,7 @@
       </div>
       <div id="tavleTekst">
       </div>
+      <img src="img/finger.png" id="finger" alt="finger">
       <section id="madvare">
       </section>
       <section class="madkasser-spillet">
@@ -102,9 +103,9 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
-      <div class="box sb">
+      <div class="resultat-box resultat-sb">
         <p id="feedback"> </p>
-        <a onclick="showPage('')" class="slutspil">SPIL IGEN</a>
+        <a onclick="showPage('home'); location.reload();" class="resultatknapv2">SPIL IGEN</a>
       </div>
     </article>
   </section>
@@ -119,6 +120,8 @@
       <div id="halvfjerdserMadGrid" class="madplacering">
       </div>
       <img src="img/madkasse-70er.png" alt="madkasseikon" class="madkasse-info">
+      <a onclick="showPage('usund')" class="madkasseknap-left">Den usunde</a>
+      <a onclick="showPage('sund')" class="madkasseknap-right">Den sunde</a>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -135,12 +138,17 @@
   <section id="sund" class="page">
     <div class="restart">
       <a onclick="showPage('home'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
+<<<<<<< HEAD
 
+=======
+>>>>>>> ddc2666459579149b491e2362156644300c891a2
     </div>
     <article class="sund">
       <div id="sundMadGrid" class="madplacering">
       </div>
       <img src="img/madkasse-den-sunde.png" alt="madkasseikon" class="madkasse-info">
+      <a onclick="showPage('halvfjerds')" class="madkasseknap-left">70'er</a>
+      <a onclick="showPage('usund')" class="madkasseknap-right">Den usunde</a>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -162,6 +170,8 @@
       <div id="usundMadGrid" class="madplacering">
       </div>
       <img src="img/madkasse-usund.png" alt="madkasseikon" class="madkasse-info">
+      <a onclick="showPage('sund')" class="madkasseknap-left">Den sunde</a>
+      <a onclick="showPage('halvfjerds')" class="madkasseknap-right">70'er</a>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
