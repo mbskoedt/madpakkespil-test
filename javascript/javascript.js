@@ -239,7 +239,7 @@ function showMadvare() {
   };
 };
 
-// drag and drop
+// drag and drop og push madvare til nyt array
 
 function allowDrop(ev) {
   ev.preventDefault();
@@ -290,7 +290,7 @@ function showHalvfjerdserMadkasseArray() {
       if (halvfjerdserMad) {
         if (halvfjerdserMadCompare.name === halvfjerdserMad.name) {
           document.getElementById(`${halvfjerdserMadCompare.name}`).classList.add("show");
-            aladin++;
+          aladin++;
         }
       }
     }
@@ -323,7 +323,7 @@ function showUsundMadkasseArray(usundMadCompare) {
       if (usundMad) {
         if (usundMadCompare.name === usundMad.name) {
           document.getElementById(`${usundMadCompare.name}`).classList.add("show");
-            aladin++
+          aladin++
         }
       }
     }
@@ -336,12 +336,11 @@ function showUsundMadkasseArray(usundMadCompare) {
 function tale() {
   let score = document.querySelector('#score');
   score.innerHTML = '<p> Dit resultat:</P>' + aladin + '<p>/20 Rigtige</p>';
-  if (aladin < 5) {
+  if (aladin < 7) {
     document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> det kan du helt sikkert gøre bedre! <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
-  } else if (aladin <= 10) {
+  } else if (aladin <= 14) {
     document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> Det var flot, men der er plads til forbedringer <br><br> lad os støve historie bøgerne af, og prøve en gang til!</p>';
-  } else if (aladin > 10) {
+  } else if (aladin > 20) {
     document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
   }
 }
-
