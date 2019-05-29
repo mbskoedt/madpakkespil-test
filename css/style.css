@@ -292,7 +292,7 @@ body {
   font-family: 'Walter Turncoat', cursive;
   font-size: 4rem;
   color: white;
-  display:flex;
+  display: flex;
   justify-content: center;
   margin-top: 8vh;
 }
@@ -642,7 +642,7 @@ body {
   position: absolute;
   width: 20%;
   left: 40%;
-  top: 35%;
+  top: 30%;
 }
 
 /* 70'er madpakke slut */
@@ -845,7 +845,6 @@ body {
 }
 
 /* Styling til inde i madpakkerne */
-
 #halvfjerdserMadGrid {
   position: absolute;
   width: 65vw;
@@ -854,7 +853,66 @@ body {
   justify-content: flex-start;
 }
 
-.halvfjerdserMad {
-  width: 150px;
+.mad {
   height: 150px;
+}
+
+.madplacering img:nth-child(1) {
+  margin-left: 22%;
+  margin-top: 15%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(2) {
+  margin-left: 65%;
+  margin-top: 15%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(3) {
+  margin-left: 20%;
+  margin-top: 27%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(4) {
+  margin-left: 67%;
+  margin-top: 27%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(5) {
+  margin-left: 23%;
+  margin-top: 39%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(6) {
+  margin-left: 63%;
+  margin-top: 39%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(7) {
+  margin-left: 35%;
+  margin-top: 51%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(8) {
+  margin-left: 55%;
+  margin-top: 51%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(9) {
+  margin-left: 35%;
+  margin-top: 3%;
+  position: absolute;
+}
+
+.madplacering img:nth-child(10) {
+  margin-left: 55%;
+  margin-top: 3%;
+  position: absolute;
 }
