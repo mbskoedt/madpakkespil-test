@@ -693,7 +693,7 @@ body {
     letter-spacing: 2px;
     color: white;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     background-color: #F5C600;
     padding: 2%;
     border: 4px white solid;
@@ -702,7 +702,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     top: 80%;
-    left: 30%;
+    left: 28%;
     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.39);
     text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
 }
@@ -839,7 +839,7 @@ body {
 
 .madkasser {
     position: absolute;
-    left: 13vw;
+    left: 14vw;
     top: 7vh;
     z-index: 11111;
     animation: bounce-in-top 2.1s both;
