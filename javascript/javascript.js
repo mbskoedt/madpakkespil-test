@@ -375,4 +375,4 @@ function displayFinger() {
 
 }
 
-displayFinger();
+
