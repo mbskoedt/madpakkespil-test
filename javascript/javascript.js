@@ -364,8 +364,6 @@ function tale() {
 }
 
 
-
-
 function displayFinger() {
 
     if (madvarerArray[i].name === 'Agurk') {
