@@ -30,7 +30,7 @@ setDefaultPage();
 
 // Refresh page hvis der ikke er nogen aktivitet
 
-var tim = 0;
+let tim = 0;
 
 function reload() {
     tim = setTimeout("location.reload(true);", 60000); // 1 minute
@@ -39,7 +39,7 @@ function reload() {
 function canceltimer() {
     window.clearTimeout(tim); // cancel the timer on each mousemove/click
     reload(); // and restart it
-    
+
 }
 
 
