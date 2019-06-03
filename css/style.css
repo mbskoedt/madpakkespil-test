@@ -1134,9 +1134,9 @@ body {
 .resultatfinger {
     width: 80px;
     position: absolute;
-    left: 14vw;
+    left: 15vw;
     z-index: 100000;
-    top: 20vh;
+    top: 19vh;
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both;
 
