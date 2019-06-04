@@ -208,6 +208,10 @@ body {
     margin-bottom: -25px;
 }
 
+span {
+  color: darkgreen;
+}
+
 .blue {
     color: #007291;
 }

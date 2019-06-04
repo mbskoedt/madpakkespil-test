@@ -4,7 +4,7 @@
       "name-eng": "Cucumber",
       "madpakke": ["1970", "Den sunde"],
       "imgurl": "https://i.imgur.com/W07QaXJ.png",
-      "besked": "Træk madvaren ned til den madkasse du mener den passer bedst i. En madvare kan godt passe til flere madkasser"
+      "besked": "Træk madvaren ned til den madkasse du mener den passer bedst i. En madvare kan godt passe til flere madkasser. <br>Hvis du ser <span>denne farve</span>, kan du finde madvaren oppe på plakaten med grisen."
     },
     {
       "name": "Banan",
@@ -34,14 +34,14 @@
       "name-eng": "Ham",
       "madpakke": ["1970", "Den sunde"],
       "imgurl": "https://i.imgur.com/SX3ZaGC.png",
-      "besked": "Vidste du godt at... Hamburgerryg har fungeret som kødpålæg på danskernes madpakke i mange år?"
+      "besked": "Vidste du godt at... <span>Hamburgerryg</span> har fungeret som kødpålæg på danskernes madpakke i mange år?"
     },
     {
       "name": "Leverpostej",
       "name-eng": "Liver paste",
       "madpakke": ["1970"],
       "imgurl": "https://i.imgur.com/eoWEt7G.png",
-      "besked": " Vidste du godt at... Leverpostej er lavet af leveren fra en gris? Leveren bliver hakket sammen med spæk, løg, og bliver blandet med mælk, æg, salt og peber. Herefter bliver den bagt i ovnen."
+      "besked": " Vidste du godt at... <span>Leverpostej</span> er lavet af leveren fra en gris? Leveren bliver hakket sammen med spæk, løg, og bliver blandet med mælk, æg, salt og peber. Herefter bliver den bagt i ovnen."
     },
     {
       "name": "Peberfrugt",
@@ -72,14 +72,14 @@
       "name-eng": "Rolled meat sausage",
       "madpakke": ["1970"],
       "imgurl": "https://i.imgur.com/t5x6WpK.png",
-      "besked": " Vidste du godt at... Rullepølse er lavet af svineslag, salt og peber? Man har spist rullepølse i Danmark siden 1700-tallet. "
+      "besked": " Vidste du godt at... <span>Rullepølse</span> er lavet af svineslag, salt og peber? Man har spist rullepølse i Danmark siden 1700-tallet. "
     },
     {
       "name": "Spegepølse",
       "name-eng": "Salami",
       "madpakke": ["1970"],
       "imgurl": "https://i.imgur.com/Uu7q4uZ.png",
-      "besked": " Vidste du godt at... Spegepølse ofte er fremstillet af hakket svinekød, spæk og krydderier? Kødet er let saltet?. "
+      "besked": " Vidste du godt at... <span>Spegepølse</span> ofte er fremstillet af hakket svinekød, spæk og krydderier? Kødet er let saltet?. "
 
 
     },
@@ -129,7 +129,7 @@
       "name-eng": "Red sausages",
       "madpakke": ["1970", "Den usunde"],
       "imgurl": "https://i.imgur.com/J3VyVFX.png",
-      "besked": "Vidste du godt at... Røde pølser er lavet på svinefars, og får sin røde farve fra små lus?"
+      "besked": "Vidste du godt at... Røde pølser er lavet på <span>svinefars</span>, og får sin røde farve fra små lus?"
     },
     {
       "name": "Kartoffel",
