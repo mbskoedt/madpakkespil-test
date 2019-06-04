@@ -8,7 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<<<<<<< HEAD
 <body>
+=======
+<body onmousemove="canceltimer()" onclick="canceltimer()">
+>>>>>>> 57beee46ce4fa1ebdb53abb27271914a66c9d30b
   <!-- startside / pauseskærm -->
 
   <section id="home" class="page">
@@ -43,7 +47,11 @@
       <p>Så er du kommet til det helt rigtige sted.</p>
       <p class="kort-afstand">Her i min butik har jeg råvarer til både madpakker fra <span class="blue">70'erne</span>,</p>
       <p><span class="yellow">den sunde madpakke</span> og <span class="red">den usunde madpakke</span>.</p>
+<<<<<<< HEAD
       <p>Kan du finde ud af, hvilke råvarer, der skal i de forskellige madpakker?</p>
+=======
+      <p>Kan du finde ud af hvilke råvarer, der skal i de forskellige madpakker?</p>
+>>>>>>> 57beee46ce4fa1ebdb53abb27271914a66c9d30b
       <div class="introknap-animation">
         <a class="introknap" onclick="showPage('spillet'), showMadvare()">TRYK FOR START</a>
       </div>
@@ -61,6 +69,7 @@
       </div>
       <div id="tavleTekst">
       </div>
+      <img src="img/finger.png" id="finger" alt="finger">
       <section id="madvare">
       </section>
       <section class="madkasser-spillet">
@@ -87,6 +96,7 @@
       <a onclick="showPage('home'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
     </div>
     <article class="resultat">
+      <img src="img/finger.png" alt="finger" class="resultatfinger">
       <div class="madkasser">
         <a onclick="showPage('halvfjerds')"><img src="img/madkasse-70er.png" alt="madkasseikon"></a>
         <a onclick="showPage('sund')"><img src="img/madkasse-den-sunde.png" alt="madkasseikon"></a>
@@ -102,9 +112,9 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Dansk"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
-      <div class="box sb">
+      <div class="resultat-box resultat-sb">
         <p id="feedback"> </p>
-        <a onclick="showPage('')" class="slutspil">SPIL IGEN</a>
+        <a onclick="showPage('home'); location.reload();" class="resultatknapv2">SPIL IGEN</a>
       </div>
     </article>
   </section>
@@ -119,6 +129,8 @@
       <div id="halvfjerdserMadGrid" class="madplacering">
       </div>
       <img src="img/madkasse-70er.png" alt="madkasseikon" class="madkasse-info">
+      <a onclick="showPage('usund')" class="madkasseknap-left">Den usunde</a>
+      <a onclick="showPage('sund')" class="madkasseknap-right">Den sunde</a>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -135,12 +147,13 @@
   <section id="sund" class="page">
     <div class="restart">
       <a onclick="showPage('home'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
-
     </div>
     <article class="sund">
       <div id="sundMadGrid" class="madplacering">
       </div>
       <img src="img/madkasse-den-sunde.png" alt="madkasseikon" class="madkasse-info">
+      <a onclick="showPage('halvfjerds')" class="madkasseknap-left">70'er</a>
+      <a onclick="showPage('usund')" class="madkasseknap-right">Den usunde</a>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -162,6 +175,8 @@
       <div id="usundMadGrid" class="madplacering">
       </div>
       <img src="img/madkasse-usund.png" alt="madkasseikon" class="madkasse-info">
+      <a onclick="showPage('sund')" class="madkasseknap-left">Den sunde</a>
+      <a onclick="showPage('halvfjerds')" class="madkasseknap-right">70'er</a>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -177,7 +192,6 @@
 
   <!-- ENGELSK FORSIDE -->
   <section id="home-eng" class="page">
-
     <div class="indhold">
       <div class="translate">
         <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="English"></a>
@@ -196,7 +210,7 @@
 
   <section id="intro-eng" class="page">
     <div class="restart">
-      <a onclick="showPage('home'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
+      <a onclick="showPage('home-eng'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
     </div>
     <div class="intro-translate">
       <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="English"></a>
@@ -212,7 +226,7 @@
       <p><span class="yellow">a healthy lunch</span> and <span class="red">an unhealthy lunch</span>.</p>
       <p>Can you place the food in the fitting lunch?</p>
       <div class="introknap-animation">
-        <a class="introknap" onclick="showPage('spillet-eng')">PRESS TO START</a>
+        <a class="introknap" onclick="showPage('spillet-eng'), showMadvare()">PRESS TO START</a>
       </div>
     </div>
     <img src="img/renslagter2.png" alt="Slagter Ole" class="intro-slagter">
@@ -221,6 +235,7 @@
   <!-- THE GAME -->
 
   <section id="spillet-eng" class="page">
+<<<<<<< HEAD
     <div class="restart">
       <a onclick="showPage('home'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
 
@@ -247,12 +262,40 @@
       </div>
     </article>
   </section>
+=======
+        <div class="restart">
+            <a onclick="showPage('home-eng'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
+        </div>
+        <article class="resultat">
+            <p id="antalMadvarerEng"></p>
+            <div id="tavleTekstEng">
+            </div>
+            <img src="img/finger.png" id="fingerEng" alt="finger">
+            <section id="madvareEng">
+            </section>
+            <section class="madkasser-spillet">
+                <img src="img/70s_lunch.png" alt="70's lunch" ondrop="dropHalvfjerdser(event)" ondragover="allowDrop(event)">
+                <img src="img/healthy_lunch.png" alt="Healthy lunch" ondrop="dropSund(event)" ondragover="allowDrop(event)">
+                <img src="img/unhealthy_lunch.png" alt="Unhealthy lunch" ondrop="dropUsund(event)" ondragover="allowDrop(event)">
+            </section>
+        </article>
+        <article class="slagter-ole-container">
+            <div class="translate">
+                <a class="britisk" onclick="showPage('home-eng')"><img src="img/britisk.png" alt="English"></a>
+                <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Danish"></a>
+            </div>
+            <img src="img/renslagter2.png" class="slagterole">
+            <div class="box sb" id="resultatTaleEng">
+            </div>
+        </article>
+    </section>
+>>>>>>> 57beee46ce4fa1ebdb53abb27271914a66c9d30b
 
   <!-- RESULTS -->
 
   <section id="resultat-eng" class="page">
     <div class="restart">
-      <a onclick="showPage('home'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
+      <a onclick="showPage('home-eng'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
     </div>
     <article class="resultat">
       <div class="madkasser">
@@ -262,7 +305,7 @@
       </div>
       <img src="img/veagt.png" class="vaegt" alt="vægt">
       <img src="img/brunnaal.png" alt="nål" class="naal">
-      <p id="score">My result</p>
+      <div id="scoreEng"></div>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -270,9 +313,9 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Danish"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
-      <div class="box sb">
-        <p id="feedback"></p>
-        <a onclick="showPage('')" class="slutspil">PLAY AGAIN</a>
+      <div class="resultat-box resultat-sb">
+        <p id="feedbackEng"></p>
+        <a onclick="showPage('home-eng'); location.reload();" class="resultatknapv2">PLAY AGAIN</a>
       </div>
     </article>
   </section>
@@ -281,10 +324,14 @@
 
   <section id="seventy" class="page">
     <div class="restart">
-      <a onclick="showPage('home'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
+      <a onclick="showPage('home-eng'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
     </div>
     <article class="halvfjerds">
+      <div id="halvfjerdserMadGridEng" class="madplacering">
+      </div>
       <img src="img/70s_lunch.png" alt="madkasseikon" class="madkasse-info">
+      <a onclick="showPage('unhealthy')" class="madkasseknap-left">Unhealthy</a>
+      <a onclick="showPage('healthy')" class="madkasseknap-right">Healthy</a>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -292,17 +339,26 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Danish"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
+      <a onclick="showPage('resultat-eng')" class="slutspil">back</a>
     </article>
   </section>
 
   <!-- HEALTHY LUNCH -->
 
+<<<<<<< HEAD
   <section id="sund" class="page">
+=======
+  <section id="healthy" class="page">
+>>>>>>> 57beee46ce4fa1ebdb53abb27271914a66c9d30b
     <div class="restart">
-      <a onclick="showPage('home'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
+      <a onclick="showPage('home-eng'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
     </div>
     <article class="sund">
+      <div id="sundMadGridEng" class="madplacering">
+      </div>
       <img src="img/healthy_lunch.png" alt="madkasseikon" class="madkasse-info">
+      <a onclick="showPage('seventy')" class="madkasseknap-left">70's</a>
+      <a onclick="showPage('unhealthy')" class="madkasseknap-right">Unhealthy</a>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -310,18 +366,24 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Danish"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
+      <a onclick="showPage('resultat-eng')" class="slutspil">back</a>
     </article>
   </section>
 
   <!-- UNHEALTHY LUNCH -->
 
+<<<<<<< HEAD
   <section id="usund" class="page">
+=======
+  <section id="unhealthy" class="page">
+>>>>>>> 57beee46ce4fa1ebdb53abb27271914a66c9d30b
     <div class="restart">
-      <a onclick="showPage('home'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
-
+      <a onclick="showPage('home-eng'); location.reload();"><img src="img/kryds.png" alt="kryds"></a>
     </div>
     <article class="usund">
       <img src="img/unhealthy_lunch.png" alt="madkasseikon" class="madkasse-info">
+      <a onclick="showPage('healthy')" class="madkasseknap-left">Healthy</a>
+      <a onclick="showPage('seventy')" class="madkasseknap-right">70's</a>
     </article>
     <article class="slagter-ole-container">
       <div class="translate">
@@ -329,10 +391,14 @@
         <a class="dansk" onclick="showPage('home')"><img src="img/dansk.png" alt="Danish"></a>
       </div>
       <img src="img/renslagter2.png" class="slagterole">
+      <a onclick="showPage('resultat-eng')" class="slutspil">tilbage</a>
     </article>
   </section>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 57beee46ce4fa1ebdb53abb27271914a66c9d30b
   <script src="javascript/javascript.js"></script>
 </body>
 
