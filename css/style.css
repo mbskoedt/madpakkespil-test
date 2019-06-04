@@ -310,7 +310,7 @@ body {
     position: absolute;
     left: 26%;
     z-index: 5;
-    top: 7%;
+    top: 4%;
 }
 
 .madkasser-spillet {
@@ -693,7 +693,7 @@ body {
     letter-spacing: 2px;
     color: white;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 2vw;
     background-color: #F5C600;
     padding: 2%;
     border: 4px white solid;
@@ -702,7 +702,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     top: 80%;
-    left: 28%;
+    left: 30%;
     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.39);
     text-shadow: 4px 4px rgba(0, 0, 0, 0.69);
 }
@@ -839,7 +839,7 @@ body {
 
 .madkasser {
     position: absolute;
-    left: 14vw;
+    left: 13vw;
     top: 7vh;
     z-index: 11111;
     animation: bounce-in-top 2.1s both;
@@ -1134,9 +1134,9 @@ body {
 .resultatfinger {
     width: 80px;
     position: absolute;
-    left: 15vw;
+    left: 14vw;
     z-index: 100000;
-    top: 19vh;
+    top: 20vh;
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both;
 
