@@ -39,7 +39,7 @@ function reload() {
 function canceltimer() {
     window.clearTimeout(tim); // cancel the timer on each mousemove/click
     reload(); // and restart it
-    
+
 }
 
 
