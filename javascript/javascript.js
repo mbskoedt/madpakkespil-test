@@ -358,7 +358,7 @@ function tale() {
         document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> det kan du helt sikkert gøre bedre! <br><br> Lad os støve historiebøgerne af, og prøve en gang til!</p>';
     } else if (aladin <= 14) {
         document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> Det var flot, men der er plads til forbedringer <br><br> Lad os støve historiebøgerne af, og prøve en gang til!</p>';
-    } else if (aladin > 20) {
+    } else if (aladin > 14) {
         document.getElementById('feedback').innerHTML = aladin + '<p> /20 Rigtige,<br><br> Hold da op!<br><br> Der er vist en slagter gemt i dig! <br><br> Tryk på knappen for at prøve igen </p>';
     }
 }
